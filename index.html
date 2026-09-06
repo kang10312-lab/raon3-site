@@ -1,0 +1,233 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>라온3 자동매매 구독 — 전략은 비밀이 아닙니다, 실행이 문제일 뿐</title>
+<meta name="description" content="8.5년 백테스트 승률 99.4%. 당신의 OKX 계좌에서 24시간 돌아가는 비트코인 분할매수 자동매매. 월 39,000원.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16181d;--ink-soft:#565b66;--ink-faint:#8a909c;--paper:#f4f5f7;--card:#fff;--line:#dde0e6;
+--gain:#1f7a55;--gain-soft:#e3f0e8;--gain-deep:#155c40;--loss:#b1432f;--loss-soft:#f5e4e0;--gold:#b8821f;--gold-soft:#f6edd8;
+--navy:#0f1a2b;--mint:#3ddc97;--shadow:0 1px 2px rgba(20,24,32,.04),0 8px 26px rgba(20,24,32,.07)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+.num{font-family:'Fraunces',serif;font-feature-settings:"tnum" 1}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+.fill{border-bottom:2px dashed var(--gold);color:var(--gold);font-weight:700}
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:64px 0 56px}
+.hero .kicker{display:inline-block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);font-weight:700;margin-bottom:18px}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:clamp(30px,6vw,50px);line-height:1.2;letter-spacing:-.01em;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.hero p.lead{font-size:18px;color:#c9d1dc;max-width:620px;margin-bottom:28px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px 0 30px}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 12px}
+.stat b{display:block;font-size:26px;color:#fff;line-height:1.1}
+.stat span{font-size:12px;color:#aeb8c6}
+.stat small{display:block;font-size:11px;color:#7f8a99;margin-top:4px}
+.cta{display:inline-block;background:var(--mint);color:#062015;font-weight:700;font-size:18px;padding:16px 26px;border-radius:12px;text-decoration:none}
+.cta.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);margin-left:8px}
+.cta:hover{filter:brightness(1.05)}
+.hero .sub{font-size:13px;color:#8e99a8;margin-top:14px}
+/* sections */
+section{padding:54px 0}
+section.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gain);font-weight:700;margin-bottom:8px}
+h2{font-family:'Noto Serif KR',serif;font-size:clamp(24px,4vw,34px);line-height:1.25;margin-bottom:14px}
+.sub{color:var(--ink-soft);font-size:17px;max-width:640px;margin-bottom:26px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 18px;box-shadow:var(--shadow)}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{color:var(--ink-soft);font-size:15px}
+.qa{background:var(--gold-soft);border-left:4px solid var(--gold);padding:18px 20px;border-radius:0 12px 12px 0;margin-top:26px}
+.qa .q{font-weight:700;font-size:17px;margin-bottom:6px}
+.qa .a{font-size:16px}
+/* strategy */
+.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.rule b{display:block;font-size:22px;color:var(--gain-deep)}
+.rule span{font-size:14px;color:var(--ink-soft)}
+.open{background:var(--gain-soft);border-radius:12px;padding:16px 18px;margin-top:18px;font-size:16px}
+/* proof */
+table{width:100%;border-collapse:collapse;font-size:15px;background:var(--card);border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;background:#fafbfc}
+td.neg{color:var(--loss)}td.pos{color:var(--gain)}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:18px 0}
+.live{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.live .card b{font-size:22px;color:var(--gain-deep);display:block}
+.note{font-size:13px;color:var(--ink-faint);margin-top:10px}
+/* pricing */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.plan{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:26px 22px;text-align:center;position:relative}
+.plan.best{border-color:var(--gain);box-shadow:var(--shadow)}
+.plan .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gain);color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px}
+.plan h3{font-size:16px;color:var(--ink-soft);margin-bottom:6px}
+.plan .price{font-size:40px;font-weight:700;line-height:1.1}
+.plan .price small{font-size:16px;font-weight:400;color:var(--ink-soft)}
+.plan .per{color:var(--ink-soft);font-size:14px;margin:6px 0 16px}
+.plan ul{list-style:none;text-align:left;font-size:15px;margin:14px 0 18px}
+.plan li{padding:6px 0 6px 26px;position:relative;border-top:1px solid var(--line)}
+.plan li::before{content:"✓";position:absolute;left:4px;color:var(--gain);font-weight:700}
+.plan .cta{display:block;text-align:center;background:var(--gain);color:#fff}
+.plan.best .cta{background:var(--gain-deep)}
+.seedbox{background:var(--gold-soft);border-radius:12px;padding:14px 18px;font-size:15px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 14px}
+.step .n{width:30px;height:30px;border-radius:50%;background:var(--gain);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.step b{display:block;margin-bottom:4px}
+.step span{font-size:14px;color:var(--ink-soft)}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--ink-faint)}
+details[open] summary::after{content:"−"}
+details p{padding:0 0 16px;color:var(--ink-soft);font-size:15px}
+/* risk */
+.risk{border:2px solid var(--loss);background:var(--loss-soft);border-radius:14px;padding:20px 22px}
+.risk h3{color:var(--loss);font-size:18px;margin-bottom:8px}
+.risk li{margin:6px 0 6px 18px;font-size:15px}
+.legal{font-size:13px;color:var(--ink-faint);margin-top:16px;line-height:1.6}
+.consent{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:16px;font-size:15px}
+footer{padding:30px 0 50px;font-size:13px;color:var(--ink-faint);text-align:center}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.grid3,.plans,.live,.rules{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.cta.ghost{margin:10px 0 0;display:inline-block}}
+</style></head>
+<body>
+
+<!-- HERO -->
+<div class="hero"><div class="wrap">
+<span class="kicker">라온3 · 비트코인 자동매매 구독</span>
+<h1>전략은 비밀이 아닙니다.<br><em>사람이 못 할 뿐입니다.</em></h1>
+<p class="lead">새벽 3시 물타기, 하루도 안 쉬는 감시, 감정 없는 익절. 라온3는 당신의 OKX 계좌 안에서 폰이 꺼져 있어도 24시간 이 일을 대신합니다. 돈은 항상 당신 계좌에 있습니다.</p>
+<div class="stats">
+  <div class="stat"><b class="num">99.4%</b><span>거래 승률</span><small>백테스트 기준 · 2,810회 중 2,792회 익절</small></div>
+  <div class="stat"><b class="num">8.5년</b><span>검증 기간</span><small>2017.12–2026.05 · 5분봉 889,649개</small></div>
+  <div class="stat"><b class="num">연 330회</b><span>익절 사이클</span><small>거의 매일 1회</small></div>
+  <div class="stat"><b class="num">×19.5</b><span>8.5년 최종 배수</span><small>백테스트 기준 · +1,850.8%</small></div>
+</div>
+<a class="cta" href="#pricing">월 39,000원으로 시작하기</a>
+<a class="cta ghost" href="#proof">검증 기록 보기</a>
+<p class="sub">※ 백테스트 기준 · 원금 손실이 발생할 수 있습니다</p>
+</div></div>
+
+<!-- WHY -->
+<section><div class="wrap">
+<div class="eyebrow">Why a bot</div>
+<h2>이 전략을 사람이 직접 하면 왜 안 되는가</h2>
+<p class="sub">전략 자체는 단순합니다. 문제는 사람이 8.5년 동안 단 한 번도 어기지 않고 실행할 수 없다는 것입니다.</p>
+<div class="grid3">
+  <div class="card"><h3>새벽 3시 물타기</h3><p>가격이 3% 내리는 순간이 언제 올지 모릅니다. 봇은 5분마다 확인하고 정해진 금액을 정확히 넣습니다. 당신은 자고 있어도 됩니다.</p></div>
+  <div class="card"><h3>매일 반복되는 +2% 익절</h3><p>연 330번의 사이클. 익절 후 바로 다음 사이클을 시작합니다. 사람은 한 달이면 지치고, 봇은 8.5년째 같은 속도입니다.</p></div>
+  <div class="card"><h3>감정이 없다</h3><p>"조금만 더 오를 것 같은데"가 없습니다. 목표에 닿으면 팝니다. 이 무감정이 99.4%를 만듭니다.</p></div>
+</div>
+<div class="qa">
+  <div class="q">"과거에 됐다고 앞으로도 될까요?"</div>
+  <div class="a">차트를 움직이는 건 기술이 아니라 사람입니다. 욕심, 공포, 패닉 — 8.5년 동안도, 오늘도, 내일도 같습니다. 이 전략이 계속 작동해 온 이유는 사람이 변하지 않기 때문입니다. 그래서 라온3는 방향을 예측하지 않고, 사람의 심리가 만드는 출렁임을 분할매수로 받아냅니다.</div>
+</div>
+</div></section>
+
+<!-- STRATEGY (public) -->
+<section class="alt"><div class="wrap">
+<div class="eyebrow">How it works · 전부 공개합니다</div>
+<h2>숨길 게 없는 전략, 그래서 더 믿을 수 있는 전략</h2>
+<p class="sub">비법을 파는 게 아닙니다. 공개된 규칙을 8.5년치 데이터로 검증하고, 그 규칙을 한 치의 오차 없이 실행하는 봇을 빌려드리는 것입니다.</p>
+<div class="rules">
+  <div class="rule"><b>7단계 분할매수</b><span>자금을 1·2·4·8·16·32·64 비율로 나눠 첫 진입은 전체의 약 1/127만 사용</span></div>
+  <div class="rule"><b>−3%마다 추가 매수</b><span>가격이 평균단가 대비 3% 내릴 때마다 다음 단계 진입 → 평균단가 하향</span></div>
+  <div class="rule"><b>+2% 익절</b><span>평균단가 대비 2% 오르면 전량 청산, 즉시 새 사이클 시작</span></div>
+  <div class="rule"><b>−5% 손절 (7단계 이후)</b><span>마지막 단계까지 채운 뒤에도 5% 더 내리면 손절 — 8.5년간 18회</span></div>
+  <div class="rule"><b>BTC/USDT 무기한 · 4배 · Cross</b><span>5분봉 기준 판단, 전액 복리 (수익이 다음 사이클 자금에 자동 반영)</span></div>
+  <div class="rule"><b>당신 계좌, 당신 돈</b><span>봇은 API로 매매만 합니다. 출금 권한이 없어 자금을 옮길 수 없습니다</span></div>
+</div>
+<div class="open">이 규칙을 그대로 손으로 따라 하셔도 됩니다. 다만 5분마다 확인하고, 새벽에 물타기하고, 8.5년 동안 한 번도 어기지 않을 수 있다면요. 라온3는 그 "실행"을 팝니다.</div>
+</div></section>
+
+<!-- PROOF -->
+<section id="proof"><div class="wrap">
+<div class="eyebrow">Track record</div>
+<h2>8.5년 백테스트 + 운용자 실계좌 기록</h2>
+<p class="sub">좋은 숫자만 고르지 않았습니다. 마이너스 해도, 최대낙폭도 그대로 공개합니다.</p>
+<div class="chart"><svg viewBox="0 0 900 330" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans KR,sans-serif"><line x1="60" y1="214.5" x2="884" y2="214.5" stroke="#eef0f3" stroke-width="1"/><text x="52" y="218.0" text-anchor="end" font-size="10" fill="#8a909c">$25k</text><line x1="60" y1="151.0" x2="884" y2="151.0" stroke="#eef0f3" stroke-width="1"/><text x="52" y="154.5" text-anchor="end" font-size="10" fill="#8a909c">$50k</text><line x1="60" y1="87.5" x2="884" y2="87.5" stroke="#eef0f3" stroke-width="1"/><text x="52" y="91.0" text-anchor="end" font-size="10" fill="#8a909c">$75k</text><line x1="60" y1="24.0" x2="884" y2="24.0" stroke="#eef0f3" stroke-width="1"/><text x="52" y="27.5" text-anchor="end" font-size="10" fill="#8a909c">$100k</text><line x1="60" y1="278" x2="884" y2="278" stroke="#dde0e6" stroke-width="1.5"/><rect x="75.5" y="268.3" width="44" height="9.7" rx="5" fill="#c9cfd8"/><text x="97.5" y="262.3" text-anchor="middle" font-size="10.5" font-weight="600" fill="#8a909c">시드</text><text x="97.5" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">시작</text><rect x="150.4" y="262.3" width="44" height="15.7" rx="5" fill="#1f7a55"/><text x="172.4" y="256.3" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×1.6</text><text x="172.4" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2017</text><rect x="225.3" y="244.2" width="44" height="33.8" rx="5" fill="#1f7a55"/><text x="247.3" y="238.2" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×3.5</text><text x="247.3" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2018</text><rect x="300.2" y="235.0" width="44" height="43.0" rx="5" fill="#1f7a55"/><text x="322.2" y="229.0" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×4.4</text><text x="322.2" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2019</text><rect x="375.1" y="238.6" width="44" height="39.4" rx="5" fill="#1f7a55"/><text x="397.1" y="232.6" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×4.1</text><text x="397.1" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2020</text><rect x="450.0" y="101.6" width="44" height="176.4" rx="5" fill="#1f7a55"/><text x="472.0" y="95.6" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×18.2</text><text x="472.0" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2021</text><rect x="524.9" y="162.4" width="44" height="115.6" rx="5" fill="#1f7a55"/><text x="546.9" y="156.4" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×11.9</text><text x="546.9" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2022</text><rect x="599.8" y="112.0" width="44" height="166.0" rx="5" fill="#1f7a55"/><text x="621.8" y="106.0" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×17.1</text><text x="621.8" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2023</text><rect x="674.7" y="149.8" width="44" height="128.2" rx="5" fill="#1f7a55"/><text x="696.7" y="143.8" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×13.2</text><text x="696.7" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2024</text><rect x="749.6" y="53.2" width="44" height="224.8" rx="5" fill="#1f7a55"/><text x="771.6" y="47.2" text-anchor="middle" font-size="10.5" font-weight="600" fill="#4a7a63">×23.2</text><text x="771.6" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2025</text><rect x="824.5" y="89.1" width="44" height="188.9" rx="5" fill="#155c40"/><text x="846.5" y="83.1" text-anchor="middle" font-size="10.5" font-weight="600" fill="#155c40">×19.5</text><text x="846.5" y="294" text-anchor="middle" font-size="10.5" fill="#565b66">2026</text><line x1="472.0" y1="28.0" x2="472.0" y2="87.6" stroke="#b8821f" stroke-width="1.2" stroke-dasharray="3 3"/><rect x="466.0" y="22.0" width="12" height="12" transform="rotate(45 472.0 28.0)" fill="#b8821f" stroke="#fff" stroke-width="2"/><text x="485.0" y="32.0" font-size="11.5" font-weight="700" fill="#9a6b1f">최고점 $98,443 (×25.8)</text></svg>
+<p class="note">초기 시드 $3,813 → 최고점 $98,443(×25.8, 2021.12) → 최종 $74,389(×19.5). 수수료·슬리피지·펀딩 전부 반영. (백테스트 기준)</p></div>
+<table>
+<tr><th>연도</th><th>연 수익률</th><th>누적</th><th>익절 / 손절</th></tr>
+<tr><td>2017 (12월~)</td><td class="pos">+62.2%</td><td>+62.2%</td><td>273 / 1</td></tr>
+<tr><td>2018</td><td class="pos">+115.2%</td><td>+249.1%</td><td>536 / 4</td></tr>
+<tr><td>2019</td><td class="pos">+27.1%</td><td>+343.8%</td><td>293 / 2</td></tr>
+<tr><td>2020</td><td class="neg">−8.4%</td><td>+306.5%</td><td>379 / 3</td></tr>
+<tr><td>2021</td><td class="pos">+347.9%</td><td>+1,720.9%</td><td>532 / 1</td></tr>
+<tr><td>2022</td><td class="neg">−34.4%</td><td>+1,093.9%</td><td>245 / 4</td></tr>
+<tr><td>2023</td><td class="pos">+43.5%</td><td>+1,613.5%</td><td>144 / 0</td></tr>
+<tr><td>2024</td><td class="neg">−22.7%</td><td>+1,224.0%</td><td>204 / 2</td></tr>
+<tr><td>2025</td><td class="pos">+75.3%</td><td>+2,220.9%</td><td>126 / 0</td></tr>
+<tr><td>2026 (~5/22)</td><td class="neg">−15.9%</td><td>+1,850.8%</td><td>60 / 1</td></tr>
+</table>
+<p class="note">10개 연도 중 6개 플러스. 최대낙폭 −74.3%(2021년 고점 대비), 그 바닥에서도 초기 원금의 ×6.6. 강제청산 0회. (백테스트 기준)</p>
+
+<div class="live">
+  <div class="card"><span class="eyebrow">실계좌 검증 1</span><b>+3.5% · 매매 3일</b><p>2026.05.31–06.04 운용자 실계좌(바이낸스). 하락 구간에서 분할매수 사이클을 설계대로 완결하고 익절, 전액 회수. 거래소 기록과 센트 단위 일치.</p></div>
+  <div class="card"><span class="eyebrow">실계좌 운용 중</span><b>2026.09.03 ~ 현재</b><p>운용자 본인 자금으로 OKX에서 실시간 가동 중. 첫날 사이클 2회 익절. 텔레그램 매매 기록을 상담 시 그대로 보여드립니다.</p></div>
+</div>
+</div></section>
+
+<!-- PRICING -->
+<section class="alt" id="pricing"><div class="wrap">
+<div class="eyebrow">Pricing</div>
+<h2>커피 한 잔 값으로, 8.5년 검증된 실행을 빌리세요</h2>
+<p class="sub">이용권입니다. 운용 수수료나 수익 분배가 없습니다. 벌어도 다 당신 것, 구독료는 정액입니다.</p>
+<div class="plans">
+  <div class="plan"><h3>월 구독</h3><div class="price num">39,000<small>원/월</small></div><div class="per">언제든 해지</div>
+    <ul><li>당신 OKX 계좌에서 24시간 자동매매</li><li>텔레그램 실시간 매매 알림</li><li>온보딩 가이드 + 설치 지원</li><li>문의 채널 응대</li></ul>
+    <a class="cta" href="http://pf.kakao.com/_xfpSJX/chat" target="_blank" rel="noopener">월 구독 신청</a></div>
+  <div class="plan best"><span class="tag">3개월 무료 효과</span><h3>연 구독</h3><div class="price num">342,000<small>원/년</small></div><div class="per">월 28,500원꼴 · 27% 할인</div>
+    <ul><li>월 구독의 모든 것</li><li>1년 동안 가격 고정</li><li>중간 이탈 없이 사이클 누적 — 복리는 시간이 만듭니다</li><li>우선 지원</li></ul>
+    <a class="cta" href="http://pf.kakao.com/_xfpSJX/chat" target="_blank" rel="noopener">연 구독 신청</a></div>
+</div>
+<div class="seedbox"><strong>권장 운용 자금: 500만원 이상</strong> — 봇은 약 35만원부터 작동하지만, 구독료 대비 의미 있는 결과를 보려면 500만원 이상을 권합니다. 자금은 언제든 더 넣거나 뺄 수 있고, 다음 사이클부터 자동 반영됩니다.</div>
+</div></section>
+
+<!-- STEPS -->
+<section><div class="wrap">
+<div class="eyebrow">Getting started</div>
+<h2>시작까지 30분, 4단계</h2>
+<div class="steps">
+  <div class="step"><div class="n">1</div><b>OKX 가입</b><span><a href="https://okx.com/join/36816702" target="_blank" rel="noopener">추천 링크</a>로 가입하면 수수료 할인 (코드 36816702). 기존 회원은 봇 전용 서브계정</span></div>
+  <div class="step"><div class="n">2</div><b>API 키 발급</b><span>매매 권한만, 출금 권한 없음. 그림 가이드 그대로 10분</span></div>
+  <div class="step"><div class="n">3</div><b>텔레그램 연결</b><span>@raon3_alert_bot 에서 시작 버튼 한 번</span></div>
+  <div class="step"><div class="n">4</div><b>입금 → 가동</b><span>본인 계좌에 USDT 입금. 20분 안에 봇이 켜지고 5분 내 첫 진입</span></div>
+</div>
+<p><a class="cta" style="background:var(--gain);color:#fff" href="https://kang10312-lab.github.io/raon3-site/guide.html">온보딩 가이드 보기 (그림 설명)</a></p>
+</div></section>
+
+<!-- FAQ -->
+<section class="alt"><div class="wrap">
+<div class="eyebrow">FAQ</div>
+<h2>자주 묻는 질문</h2>
+<details><summary>내 돈은 어디에 있나요?</summary><p>항상 본인 OKX 계좌에 있습니다. 봇은 API 키로 매매 명령만 보냅니다. 키에 출금 권한이 없어서 운영자를 포함한 누구도 자금을 옮길 수 없고, 언제든 OKX에서 키를 삭제하면 봇은 즉시 접근을 잃습니다.</p></details>
+<details><summary>얼마부터 가능한가요?</summary><p>현재 BTC 가격 기준 약 35만원부터 사이클이 시작됩니다. 다만 구독료(연 342,000원)를 생각하면 500만원 이상을 권합니다. 자금 추가·인출은 자유이며 다음 사이클부터 자동 반영됩니다.</p></details>
+<details><summary>손실이 나면 어떻게 되나요?</summary><p>손실은 본인 계좌에서 발생하며 운영자가 보전하지 않습니다. 8.5년 백테스트에서 손절은 2,810회 중 18회, 최대낙폭은 −74.3%였습니다. 마이너스 연도도 4번 있었습니다. 이 숫자를 감당할 수 있는 자금으로만 시작하세요.</p></details>
+<details><summary>해지하면 진행 중인 포지션은요?</summary><p>구독이 끝나면 봇은 새 사이클을 시작하지 않고, 진행 중인 사이클은 익절 또는 손절까지 정상적으로 마무리한 뒤 멈춥니다. 강제로 청산하지 않습니다. 만료 3일 전부터 텔레그램으로 안내합니다.</p></details>
+<details><summary>이미 OKX 계정이 있어요.</summary><p>봇 전용 서브계정을 만들어 쓰시면 됩니다(가이드에 있음). 다만 추천 코드는 신규 가입에만 적용되므로 수수료 할인은 받을 수 없습니다.</p></details>
+<details><summary>운영자는 제 계좌를 볼 수 있나요?</summary><p>봇이 매매를 위해 잔고와 포지션을 읽습니다. 그 외 개인정보나 출금에는 접근할 수 없습니다. 운영자도 같은 봇을 본인 계좌에서 돌리고 있습니다.</p></details>
+</div></section>
+
+<!-- RISK + APPLY -->
+<section id="apply"><div class="wrap">
+<div class="risk">
+<h3>시작 전에 꼭 읽어 주세요</h3>
+<ul>
+<li>최대낙폭 −74.3%는 실제로 발생한 조정입니다. 고점 대비 큰 하락을 견디는 인내가 필요합니다.</li>
+<li>마이너스 연도가 있습니다 (2020 · 2022 · 2024 · 2026 부분연도). 매년 수익을 내는 전략이 아닙니다.</li>
+<li>손절은 드물지만 존재합니다(8.5년간 18회). 급락장에서는 손실 폭이 커질 수 있습니다.</li>
+<li>레버리지 거래는 원금 손실이 발생할 수 있습니다. 잃어도 생활에 지장 없는 돈으로만 시작하세요.</li>
+</ul>
+</div>
+<div class="consent">☐ 위 내용과 원금 손실 가능성을 이해했으며, 매매와 손익은 본인 계좌에서 발생함에 동의합니다. <span class="note" style="display:block">※ 신청 시 체크 항목</span></div>
+<p style="margin-top:22px"><a class="cta" href="http://pf.kakao.com/_xfpSJX/chat" target="_blank" rel="noopener">카카오톡으로 구독 신청하기</a> <a class="cta" style="background:var(--gain);color:#fff;margin-left:8px" href="https://forms.gle/ehwqJKrXShyqNhcH7" target="_blank" rel="noopener">시작 정보 제출 폼</a></p><p class="note">신청 순서: 카카오톡 채널에서 플랜 선택·결제 안내 → 온보딩 가이드 따라 준비 → 제출 폼 작성 → 20분 안에 봇 가동</p>
+<p class="legal">본 서비스는 자동매매 프로그램 이용권으로, 투자 자문·일임·자금 수탁을 하지 않습니다. 매매와 손익은 이용자 본인의 거래소 계좌에서 발생하며, 운영자는 이용자의 자금을 보관하거나 출금할 수 없습니다. 안내된 성과는 2017.12–2026.05 BTC/USDT 무기한 선물 과거 데이터 기반 백테스트(수수료·슬리피지·펀딩 반영) 및 운용자 실계좌 기록이며, 과거 성과는 미래 수익을 보장하지 않습니다. 가상자산 레버리지 거래는 원금 손실이 발생할 수 있습니다. 운영자는 거래소 추천 프로그램에 따른 수수료를 받을 수 있습니다.</p>
+</div></section>
+
+<footer><div class="wrap">© 라온3트레이딩 · 문의 <a href="http://pf.kakao.com/_xfpSJX/chat" target="_blank" rel="noopener">카카오톡 채널 @raon3btc</a> · 통신판매업 신고번호 <span class="fill">[ 번호 넣기 ]</span></div></footer>
+</body></html>
