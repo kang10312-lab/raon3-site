@@ -1,0 +1,1378 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>라온1 듀얼 — 8.9년 백테스트 ×6,133, 봇 둘과 비상금, 그리고 그 대가</title>
+<meta name="description" content="라온1 듀얼 — 비트코인·BNB 추세추종 자동매매 봇 둘과 비상금. 8.9년 백테스트 ×6,133(전부 봇), 운영자 운용(봇 9 : 비상금 1) ×3,319. 최대 낙폭 −75.2%까지 그대로 공개합니다. 소개받은 분을 위한 비공개 자료.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16181d;--ink-soft:#565b66;--ink-faint:#8a909c;--paper:#f4f5f7;--card:#fff;--line:#dde0e6;
+--gain:#1f7a55;--gain-soft:#e3f0e8;--gain-deep:#155c40;--loss:#b1432f;--loss-soft:#f5e4e0;--gold:#b8821f;--gold-soft:#f6edd8;
+--navy:#0f1a2b;--mint:#3ddc97;--shadow:0 1px 2px rgba(20,24,32,.04),0 8px 26px rgba(20,24,32,.07)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+.num{font-family:'Fraunces',serif;font-feature-settings:"tnum" 1}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+.hero{background:radial-gradient(1200px 500px at 70% -10%,#1d3557 0%,var(--navy) 55%);color:#fff;padding:60px 0 54px}
+.hero .kicker{display:inline-block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);font-weight:700;margin-bottom:16px}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:clamp(30px,6vw,52px);line-height:1.18;letter-spacing:-.01em;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.hero p.lead{font-size:18px;color:#c9d1dc;max-width:640px;margin-bottom:26px}
+.big{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:6px 0 10px}
+.big .x{font-family:'Fraunces',serif;font-size:clamp(64px,13vw,118px);line-height:1;color:var(--mint);font-weight:700;letter-spacing:-.02em}
+.big .xs{font-size:17px;color:#aeb8c6;max-width:360px;line-height:1.5}
+.big .xs b{color:#fff;font-size:20px;display:block}
+.big.alt{margin-top:18px}.big.alt .x{font-size:clamp(44px,9vw,80px);color:#aeb8c6}.big.alt .xs b{color:#dfe5ee;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 26px}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 12px}
+.stat b{display:block;font-size:26px;color:#fff;line-height:1.1}
+.stat.bad b{color:#ff8f7a}
+.stat span{font-size:12px;color:#aeb8c6}
+.stat small{display:block;font-size:11px;color:#7f8a99;margin-top:4px}
+.cta{display:inline-block;background:var(--mint);color:#062015;font-weight:700;font-size:18px;padding:16px 26px;border-radius:12px;text-decoration:none}
+.cta.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);margin-left:8px}
+.cta:hover{filter:brightness(1.05)}
+.hero .sub{font-size:13px;color:#8e99a8;margin-top:14px}
+section{padding:54px 0}
+section.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+section.dark{background:var(--navy);color:#fff}
+section.dark h2,section.dark .sub{color:#fff}
+section.dark .sub{color:#c9d1dc}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gain);font-weight:700;margin-bottom:8px}
+section.dark .eyebrow{color:var(--mint)}
+h2{font-family:'Noto Serif KR',serif;font-size:clamp(24px,4vw,34px);line-height:1.25;margin-bottom:14px}
+.sub{color:var(--ink-soft);font-size:17px;max-width:680px;margin-bottom:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 18px;box-shadow:var(--shadow)}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{color:var(--ink-soft);font-size:15px}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.kpi .k{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 16px;box-shadow:var(--shadow)}
+.kpi .k b{display:block;font-size:34px;line-height:1.1;color:var(--gain-deep)}
+.kpi .k.bad b{color:var(--loss)}
+.kpi .k.gold b{color:var(--gold)}
+.kpi .k span{font-size:13px;color:var(--ink-soft);display:block;margin-top:6px}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:18px 0;box-shadow:var(--shadow)}
+.chart h4{font-size:16px;margin-bottom:4px}
+.chart .cap{font-size:13px;color:var(--ink-faint);margin-top:8px}
+.svg{width:100%;height:auto;display:block;font-family:'Noto Sans KR',sans-serif}
+.svg .grid{stroke:#e5e8ee;stroke-width:1}.svg .grid.v{stroke:#eef0f4}.svg .grid.zero{stroke:#b8bec9;stroke-width:1.2}
+.svg .ax{fill:#8a909c;font-size:12px}.svg .ax.yr{font-size:13px;fill:#565b66}
+.svg .lineA{fill:none;stroke:#1f7a55;stroke-width:2.6;stroke-linejoin:round}
+.svg .areaA{fill:rgba(31,122,85,.10)}
+.svg .lineB{fill:none;stroke:#9aa3b2;stroke-width:1.6;stroke-dasharray:5 4}
+.svg .dotA{fill:#1f7a55}.svg .dotB{fill:#9aa3b2}.svg .dotT{fill:#b1432f}
+.svg .labA,.svg .labB,.svg .labT,.svg .barlab,.svg .seedlab{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.svg .labA{fill:#155c40;font-size:14px;font-weight:700}.svg .labB{fill:#6b7382;font-size:12px}.svg .labT{fill:#b1432f;font-size:12px;font-weight:700}
+.svg .band{fill:rgba(177,67,47,.07)}.svg .bandlab{fill:#b1432f;font-size:12px;font-weight:700}
+.svg .seed{stroke:#b8821f;stroke-dasharray:3 4;stroke-width:1}.svg .seedlab{fill:#b8821f;font-size:12px}
+.svg .areaDD{fill:rgba(177,67,47,.18)}.svg .lineDD{fill:none;stroke:#b1432f;stroke-width:1.6}
+.svg .barA{fill:#1f7a55}.svg .barA.neg{fill:#b1432f}.svg .barB{fill:#cfd4dc}.svg .barB.neg{fill:#e8c2bb}
+.svg .barlab{fill:#155c40;font-size:13px;font-weight:700}.svg .barlab.neg{fill:#b1432f}
+.svg .tw{fill:#1f7a55}.svg .tl{fill:#b1432f}
+table{width:100%;border-collapse:collapse;font-size:15px;background:var(--card);border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;background:#fafbfc}
+td.neg{color:var(--loss)}td.pos{color:var(--gain)}td.muted,span.muted{color:var(--ink-faint)}
+span.muted{font-size:13px}
+.heatwrap{overflow-x:auto}
+.heat{font-size:13px;min-width:720px}
+.heat th,.heat td{padding:7px 4px;text-align:center;border:1px solid #fff}
+.heat th:first-child{text-align:center}
+.heat td.na{color:#c5cad3;background:#f7f8fa}
+.heat td.tot{font-weight:700;background:#f4f5f7}
+.wklegend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:12px;color:var(--ink-faint);margin-top:10px}
+.wklegend .sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:middle;margin-right:2px}
+.qa{background:var(--gold-soft);border-left:4px solid var(--gold);padding:18px 20px;border-radius:0 12px 12px 0;margin-top:22px}
+.qa .q{font-weight:700;font-size:17px;margin-bottom:6px}
+.qa .a{font-size:16px}
+.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.rule b{display:block;font-size:20px;color:var(--gain-deep)}
+.rule span{font-size:14px;color:var(--ink-soft)}
+.open{background:var(--gain-soft);border-radius:12px;padding:16px 18px;margin-top:18px;font-size:16px}
+.oos{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gain);border-radius:0 12px 12px 0;padding:16px 18px;margin-top:22px;font-size:15px;color:var(--ink-soft)}
+.oos b{color:var(--gain-deep)}
+.live{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.live .card b{font-size:22px;color:var(--gain-deep);display:block}
+.note{font-size:13px;color:var(--ink-faint);margin-top:10px}
+.seedbox{background:var(--gold-soft);border-radius:12px;padding:16px 18px;font-size:15px;margin-top:22px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 14px}
+.step .n{width:30px;height:30px;border-radius:50%;background:var(--gain);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.step b{display:block;margin-bottom:4px}
+.step span{font-size:14px;color:var(--ink-soft)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--ink-faint)}
+details[open] summary::after{content:"−"}
+details p{padding:0 0 16px;color:var(--ink-soft);font-size:15px}
+.risk{border:2px solid var(--loss);background:var(--loss-soft);border-radius:14px;padding:20px 22px}
+.risk h3{color:var(--loss);font-size:18px;margin-bottom:8px}
+.risk li{margin:6px 0 6px 18px;font-size:15px}
+.legal{font-size:13px;color:var(--ink-faint);margin-top:16px;line-height:1.6}
+footer{padding:30px 0 50px;font-size:13px;color:var(--ink-faint);text-align:center}
+.legal a,.step a,footer a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.stats,.kpi{grid-template-columns:repeat(2,1fr)}.grid3,.grid2,.live,.rules{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.cta.ghost{margin:10px 0 0;display:inline-block}.kpi .k b{font-size:28px}table{font-size:13px}th,td{padding:8px 6px}}
+</style></head>
+<body>
+
+<!-- HERO -->
+<div class="hero"><div class="wrap">
+<span class="kicker">라온1 듀얼 · 비트코인 + BNB 추세추종 자동매매 · 소개받은 분을 위한 비공개 자료</span>
+<h1>두 시장, 같은 규칙.<br>8.9년 동안 <em>6,133배</em>, 그리고 그 대가.</h1>
+<p class="lead">비트코인에서 검증한 규칙을 한 글자도 바꾸지 않고 BNB에도 돌립니다. 큰 추세가 올 때까지 기다렸다가 오면 끝까지 따라가는 일을 봇 둘이 24시간 대신하고, 금고가 매달 "돈이 놓일 자리"를 계산해 알려 줍니다. 사람이 할 일은 한 달에 2분, 이체 버튼뿐입니다.</p>
+<div class="big alt"><span class="x num">×6,133</span><span class="xs"><b>전부 봇에 두면 (비상금 0)</b>$3,490 → $21,405,481 (₩321.1억) · 최대 낙폭 −75.2% · 2017.12–2026.10 · 백테스트 기준</span></div>
+<div class="big"><span class="x num">×3,319</span><span class="xs"><b>봇 9 : 비상금 1 — 운영자 운용</b>$3,490 → $11,583,540 (₩173.8억) · 최대 낙폭 −71.4% · 2017.12–2026.10 · 백테스트 기준</span></div>
+<div class="stats">
+  <div class="stat"><b class="num">+150%</b><span>연 복리 수익률 (CAGR)</span><small>8.86년 · 전체 자산(봇 + 비상금) 기준</small></div>
+  <div class="stat"><b class="num">+7.87%</b><span>월 복리 수익률</span><small>107개월 기하평균 · 매달 이만큼씩 불어난 셈</small></div>
+  <div class="stat"><b class="num">0회</b><span>강제 청산</span><small>8.9년 · 두 봇 188거래 · 수수료·펀딩 반영</small></div>
+  <div class="stat bad"><b class="num">−71.4%</b><span>최대 낙폭 (MDD)</span><small>2018.01 → 2018.10 · 회복까지 13.8개월</small></div>
+</div>
+<a class="cta" href="#contact">상담 신청하기</a>
+<p class="sub">※ 모든 수익 수치는 2017.12–2026.10 과거 데이터 백테스트 기준 · 실제 계좌 실현 수익이 아닙니다 · 레버리지 거래는 원금 손실이 발생할 수 있습니다 · 운영자 실계좌: BTC 2026.07~, BNB 2026.10.14~ 운영 중</p>
+</div></div>
+
+<!-- STRUCTURE -->
+<section class="alt"><div class="wrap">
+<div class="eyebrow">Structure</div>
+<h2>봇 둘 + 비상금 + 금고 — 돈이 놓이는 자리</h2>
+<p class="sub">같은 규칙을 두 시장에 따로 돌리고, 전체 돈의 1/10은 거래하지 않는 비상금으로 둡니다. 섞어서 좋아지는 건 수익과 "최악의 해"이고, 비상금이 줄이는 건 낙폭과 "최악의 날"입니다. (백테스트 기준, 2017.12–2026.10)</p>
+<table><thead><tr><th>칸</th><th>어디</th><th>8.9년 배수</th><th>연 복리</th><th>최대 낙폭</th><th>거래</th></tr></thead><tbody>
+<tr><td><b>BTC 라온1</b> (3배)</td><td class="muted">본인 OKX 메인 계좌</td><td class="num">×503</td><td class="num pos">+102%</td><td class="num neg">-73.8%</td><td class="num muted">95</td></tr>
+<tr><td><b>BNB 라온1</b> (3배)</td><td class="muted">본인 OKX 서브계정</td><td class="num">×3,048</td><td class="num pos">+147%</td><td class="num neg">-83.7%</td><td class="num muted">93</td></tr>
+<tr><td>둘을 1:1 (분기마다 반반)</td><td class="muted">—</td><td class="num">×6,133</td><td class="num pos">+168%</td><td class="num neg">-75.2%</td><td class="num muted">188</td></tr>
+<tr style="background:var(--gain-soft)"><td><b>봇 9 : 비상금 1</b> ← 운영자 운용</td><td class="muted">비상금은 본인 OKX 자금 계정</td><td class="num"><b>×3,319</b></td><td class="num pos"><b>+150%</b></td><td class="num neg"><b>-71.4%</b></td><td class="num muted">188</td></tr>
+</tbody></table>
+<div class="rules">
+  <div class="rule"><b>1/10은 비상금</b><span>거래하지 않는 돈. 떨어졌을 때 사 주는 연료이자, 거래소 사고·청산 때 남는 돈이자, 생활비가 나가는 문.</span></div>
+  <div class="rule"><b>매달 말, 9 : 1로 되맞춤</b><span>봇이 불어 9/10를 넘으면 넘친 만큼 비상금으로 뺍니다. 봇이 고점 대비 40% 넘게 줄었을 때만 비상금에서 보충합니다.</span></div>
+  <div class="rule"><b>분기마다 BTC : BNB = 1 : 1</b><span>많이 번 쪽에서 적게 번 쪽으로 차이의 절반을 옮깁니다. 한 달에 옮기는 돈은 그 봇 잔고의 10%까지.</span></div>
+  <div class="rule"><b>금고가 계산, 사람은 이체만</b><span>금고는 읽기 전용(거래·이체 권한 없음)으로 매일 세 칸을 읽고, 월말에 "어디서 어디로 얼마"를 텔레그램으로 보냅니다. 이체는 본인 손, 한 달 2분.</span></div>
+</div>
+<div class="chart" style="margin-top:22px"><h4>비상금을 얼마나 둘까 — 같은 두 봇, 현금 비중만 다르게 (백테스트, 2017.12–2026.10, 월 1회 되맞춤)</h4>
+<table><thead><tr><th>운용</th><th>전체 자산 배수</th><th>연 복리</th><th>최대 낙폭</th><th>최악의 해</th></tr></thead><tbody>
+<tr><td>봇 1 : 비상금 3</td><td class="num"><b>×17</b></td><td class="num pos">+38%</td><td class="num neg">-30%</td><td class="num neg">2022 −7.6%</td></tr>
+<tr><td>봇 1 : 비상금 2</td><td class="num"><b>×38</b></td><td class="num pos">+51%</td><td class="num neg">-37%</td><td class="num neg">2022 −10.6%</td></tr>
+<tr><td>봇 1 : 비상금 1</td><td class="num"><b>×174</b></td><td class="num pos">+79%</td><td class="num neg">-50%</td><td class="num neg">2022 −17.6%</td></tr>
+<tr><td>봇 2 : 비상금 1</td><td class="num"><b>×674</b></td><td class="num pos">+109%</td><td class="num neg">-60%</td><td class="num neg">2022 −25.5%</td></tr>
+<tr><td>봇 3 : 비상금 1</td><td class="num"><b>×1,208</b></td><td class="num pos">+123%</td><td class="num neg">-65%</td><td class="num neg">2022 −29.4%</td></tr>
+<tr style="background:var(--gain-soft)"><td>봇 9 : 비상금 1 <b>← 운영자</b></td><td class="num"><b>×3,319</b></td><td class="num pos">+150%</td><td class="num neg">-71%</td><td class="num neg">2022 −37.1%</td></tr>
+<tr><td>전부 봇 (비상금 0)</td><td class="num"><b>×6,133</b></td><td class="num pos">+168%</td><td class="num neg">-75%</td><td class="num neg">2022 −42.4%</td></tr>
+</tbody></table>
+<p class="cap">비상금을 둘수록 낙폭은 줄고 수익도 줍니다. "얼마나 떨어져도 안 내릴 수 있나"로 고르시면 됩니다. 운영자는 −71%까지를 고른 것입니다. 보충을 "40% 넘게 줄었을 때만"으로 제한해도 결과는 거의 같습니다(×3,332).</p></div>
+</div></section>
+
+<!-- COMPOUND -->
+<section><div class="wrap">
+<div class="eyebrow">Compounding</div>
+<h2>복리가 하는 일 — 시드는 한 번, 결과는 3,319배</h2>
+<p class="sub">봇 안의 수익은 다음 거래에 그대로 실리는 전액 복리이고, 넘친 만큼만 매달 비상금으로 나옵니다. 전체 자산(봇 + 비상금)이 매달 평균 7.87%씩 불어난 것과 같은 속도로, 8.9년 뒤 시드의 3,319배가 됐습니다. (백테스트 기준)</p>
+<div class="kpi">
+  <div class="k gold"><b class="num">+7.87%</b><span>월 복리 수익률 (기하평균)<br>= 107개월 동안 매달 이 비율로 불어난 셈</span></div>
+  <div class="k"><b class="num">+150%</b><span>연 복리 수익률 (CAGR)<br>= 매년 자산이 2배 남짓</span></div>
+  <div class="k"><b class="num">65/106</b><span>플러스로 끝난 달<br>= 61% · 최고 월 +269% (2021-02) · 최악 월 -42% (2022-11)</span></div>
+</div>
+<div class="chart"><h4>전체 자산 곡선 — 시드 $3,490 (로그 스케일 · 월말 기준 · 봇 + 비상금)</h4>
+<svg viewBox="0 0 860 400" class="svg" role="img" aria-label="자산 곡선">
+<line x1="64" y1="354.0" x2="836" y2="354.0" class="grid"/>
+<text x="56" y="358.0" class="ax" text-anchor="end">$1k</text>
+<line x1="64" y1="272.0" x2="836" y2="272.0" class="grid"/>
+<text x="56" y="276.0" class="ax" text-anchor="end">$10k</text>
+<line x1="64" y1="190.0" x2="836" y2="190.0" class="grid"/>
+<text x="56" y="194.0" class="ax" text-anchor="end">$100k</text>
+<line x1="64" y1="108.0" x2="836" y2="108.0" class="grid"/>
+<text x="56" y="112.0" class="ax" text-anchor="end">$1M</text>
+<line x1="64" y1="26.0" x2="836" y2="26.0" class="grid"/>
+<text x="56" y="30.0" class="ax" text-anchor="end">$10M</text>
+<line x1="71.3" y1="26" x2="71.3" y2="354" class="grid v"/>
+<text x="71.3" y="372" class="ax" text-anchor="middle">2018</text>
+<line x1="158.7" y1="26" x2="158.7" y2="354" class="grid v"/>
+<text x="158.7" y="372" class="ax" text-anchor="middle">2019</text>
+<line x1="246.1" y1="26" x2="246.1" y2="354" class="grid v"/>
+<text x="246.1" y="372" class="ax" text-anchor="middle">2020</text>
+<line x1="333.5" y1="26" x2="333.5" y2="354" class="grid v"/>
+<text x="333.5" y="372" class="ax" text-anchor="middle">2021</text>
+<line x1="420.9" y1="26" x2="420.9" y2="354" class="grid v"/>
+<text x="420.9" y="372" class="ax" text-anchor="middle">2022</text>
+<line x1="508.3" y1="26" x2="508.3" y2="354" class="grid v"/>
+<text x="508.3" y="372" class="ax" text-anchor="middle">2023</text>
+<line x1="595.7" y1="26" x2="595.7" y2="354" class="grid v"/>
+<text x="595.7" y="372" class="ax" text-anchor="middle">2024</text>
+<line x1="683.1" y1="26" x2="683.1" y2="354" class="grid v"/>
+<text x="683.1" y="372" class="ax" text-anchor="middle">2025</text>
+<line x1="770.5" y1="26" x2="770.5" y2="354" class="grid v"/>
+<text x="770.5" y="372" class="ax" text-anchor="middle">2026</text>
+<rect x="71.3" y="26" width="102.0" height="328" class="band"/>
+<text x="122.3" y="42" class="bandlab" text-anchor="middle">최대 낙폭 −71.4% · 회복까지 13.8개월</text>
+<rect x="457.3" y="26" width="123.8" height="328" class="band"/>
+<text x="519.2" y="42" class="bandlab" text-anchor="middle">가장 긴 물밑 16.9개월 (−63.3%)</text>
+<line x1="64" y1="309.5" x2="836" y2="309.5" class="seed"/>
+<text x="70" y="303.5" class="seedlab">시드 $3,490</text>
+<polygon points="64.0,354 64.0,309.5 71.3,304.7 78.6,305.0 85.8,308.8 93.1,305.6 100.4,313.9 107.7,311.4 115.0,314.0 122.3,317.6 129.5,319.0 136.8,329.4 144.1,308.1 151.4,308.1 158.7,306.5 166.0,297.5 173.2,285.8 180.5,274.8 187.8,256.1 195.1,249.9 202.4,249.2 209.7,248.4 216.9,243.3 224.2,246.8 231.5,242.9 238.8,239.1 246.1,234.2 253.4,235.3 260.6,224.7 267.9,227.8 275.2,225.7 282.5,225.9 289.8,218.4 297.1,215.0 304.3,213.8 311.6,206.2 318.9,193.8 326.2,179.7 333.5,173.6 340.8,127.1 348.0,114.9 355.3,101.9 362.6,109.0 369.9,106.6 377.2,106.3 384.5,99.9 391.7,102.6 399.0,100.5 406.3,98.3 413.6,95.7 420.9,90.3 428.2,96.9 435.4,95.9 442.7,101.0 450.0,94.1 457.3,83.9 464.6,87.9 471.8,89.3 479.1,91.2 486.4,93.7 493.7,113.2 501.0,112.2 508.3,101.1 515.5,101.5 522.8,108.1 530.1,109.2 537.4,110.9 544.7,105.1 552.0,106.4 559.2,99.3 566.5,99.8 573.8,89.0 581.1,86.2 588.4,76.1 595.7,78.7 602.9,61.1 610.2,47.7 617.5,50.8 624.8,52.6 632.1,51.1 639.4,53.0 646.6,62.2 653.9,62.9 661.2,60.0 668.5,53.5 675.8,52.8 683.1,56.6 690.3,56.2 697.6,58.8 704.9,55.9 712.2,50.8 719.5,57.3 726.8,49.9 734.0,45.9 741.3,43.1 748.6,44.4 755.9,36.1 763.2,35.5 770.5,35.2 777.7,26.2 785.0,30.9 792.3,32.5 799.6,29.9 806.9,27.0 814.2,31.4 821.4,25.7 828.7,19.7 836.0,20.8 836.0,354" class="areaA"/>
+<polyline points="64.0,309.5 71.3,304.7 78.6,305.0 85.8,308.8 93.1,305.6 100.4,313.9 107.7,311.4 115.0,314.0 122.3,317.6 129.5,319.0 136.8,329.4 144.1,308.1 151.4,308.1 158.7,306.5 166.0,297.5 173.2,285.8 180.5,274.8 187.8,256.1 195.1,249.9 202.4,249.2 209.7,248.4 216.9,243.3 224.2,246.8 231.5,242.9 238.8,239.1 246.1,234.2 253.4,235.3 260.6,224.7 267.9,227.8 275.2,225.7 282.5,225.9 289.8,218.4 297.1,215.0 304.3,213.8 311.6,206.2 318.9,193.8 326.2,179.7 333.5,173.6 340.8,127.1 348.0,114.9 355.3,101.9 362.6,109.0 369.9,106.6 377.2,106.3 384.5,99.9 391.7,102.6 399.0,100.5 406.3,98.3 413.6,95.7 420.9,90.3 428.2,96.9 435.4,95.9 442.7,101.0 450.0,94.1 457.3,83.9 464.6,87.9 471.8,89.3 479.1,91.2 486.4,93.7 493.7,113.2 501.0,112.2 508.3,101.1 515.5,101.5 522.8,108.1 530.1,109.2 537.4,110.9 544.7,105.1 552.0,106.4 559.2,99.3 566.5,99.8 573.8,89.0 581.1,86.2 588.4,76.1 595.7,78.7 602.9,61.1 610.2,47.7 617.5,50.8 624.8,52.6 632.1,51.1 639.4,53.0 646.6,62.2 653.9,62.9 661.2,60.0 668.5,53.5 675.8,52.8 683.1,56.6 690.3,56.2 697.6,58.8 704.9,55.9 712.2,50.8 719.5,57.3 726.8,49.9 734.0,45.9 741.3,43.1 748.6,44.4 755.9,36.1 763.2,35.5 770.5,35.2 777.7,26.2 785.0,30.9 792.3,32.5 799.6,29.9 806.9,27.0 814.2,31.4 821.4,25.7 828.7,19.7 836.0,20.8" class="lineA"/>
+<circle cx="836.0" cy="20.8" r="5" class="dotA"/>
+<text x="828.0" y="42.8" class="labA" text-anchor="end">2026.10 ×3,319 · $11.58M</text>
+<circle cx="136.8" cy="329.4" r="4" class="dotT"/>
+<text x="136.8" y="349.4" class="labT" text-anchor="middle">2018.10 바닥 $2k</text>
+<text x="828.7" y="7.4" class="labB" text-anchor="end">2026.09 최고점 $12.73M</text>
+</svg>
+<p class="cap">월말 자산 기준. 로그 스케일이라 한 칸이 10배입니다. 수수료·슬리피지·펀딩·되맞춤 이체 비용 반영. 환율 1,500원 기준.</p></div>
+<table><thead><tr><th>시점</th><th>전체 자산 ($)</th><th>(원화)</th><th>시드 대비</th></tr></thead><tbody>
+<tr><td>시작 2017.12</td><td class="num">$3,490</td><td class="num muted">₩524만</td><td class="num"><b>×1.0</b></td></tr>
+<tr><td>2019 말</td><td class="num">$25,166</td><td class="num muted">₩3,775만</td><td class="num"><b>×7.2</b></td></tr>
+<tr><td>2020 말</td><td class="num">$133,516</td><td class="num muted">₩2.0억</td><td class="num"><b>×38.3</b></td></tr>
+<tr><td>2021 말</td><td class="num">$1,411,968</td><td class="num muted">₩21.2억</td><td class="num"><b>×404.6</b></td></tr>
+<tr><td>2022 말 (낙폭 후)</td><td class="num">$888,049</td><td class="num muted">₩13.3억</td><td class="num"><b>×254.5</b></td></tr>
+<tr><td>2023 말</td><td class="num">$2,446,839</td><td class="num muted">₩36.7억</td><td class="num"><b>×701.1</b></td></tr>
+<tr><td>2024 말</td><td class="num">$4,707,478</td><td class="num muted">₩70.6억</td><td class="num"><b>×1,348.8</b></td></tr>
+<tr><td>2025 말</td><td class="num">$7,661,294</td><td class="num muted">₩114.9억</td><td class="num"><b>×2,195.2</b></td></tr>
+<tr><td>2026.10 최종</td><td class="num">$11,583,540</td><td class="num muted">₩173.8억</td><td class="num"><b>×3,319.1</b></td></tr>
+</tbody></table>
+<div class="qa"><div class="q">"월 복리 7.9%면 매달 그만큼 버나요?"</div><div class="a">아닙니다. 7.9%는 8.9년 결과를 107개월로 고르게 펴 놓은 <b>평균 속도</b>입니다. 실제 달력은 아래처럼 생겼습니다 — 한 달에 +269%도 있고, −42%도 있습니다. 이 들쭉날쭉함을 견디는 사람에게만 평균이 돌아옵니다.</div></div>
+<div class="chart" style="margin-top:22px"><h4>월별 수익률 달력 (%, 전체 자산)</h4>
+<div class="heatwrap"><table class="heat"><thead><tr><th>연도</th>
+<th>1월</th>
+<th>2월</th>
+<th>3월</th>
+<th>4월</th>
+<th>5월</th>
+<th>6월</th>
+<th>7월</th>
+<th>8월</th>
+<th>9월</th>
+<th>10월</th>
+<th>11월</th>
+<th>12월</th>
+<th>연간</th></tr></thead><tbody>
+<tr><th>2018</th>
+<td style="background:rgba(31,122,85,0.34);color:#0f3d2b">+14</td>
+<td style="background:rgba(177,67,47,0.13);color:#5a1f14">-1</td>
+<td style="background:rgba(177,67,47,0.32);color:#5a1f14">-10</td>
+<td style="background:rgba(31,122,85,0.27);color:#0f3d2b">+10</td>
+<td style="background:rgba(177,67,47,0.53);color:#fff">-21</td>
+<td style="background:rgba(31,122,85,0.23);color:#0f3d2b">+7</td>
+<td style="background:rgba(177,67,47,0.26);color:#5a1f14">-7</td>
+<td style="background:rgba(177,67,47,0.31);color:#5a1f14">-10</td>
+<td style="background:rgba(177,67,47,0.20);color:#5a1f14">-4</td>
+<td style="background:rgba(177,67,47,0.61);color:#fff">-25</td>
+<td style="background:rgba(31,122,85,0.90);color:#fff">+82</td>
+<td style="background:rgba(177,67,47,0.12);color:#5a1f14">0</td>
+<td class="tot pos">+4%</td></tr>
+<tr><th>2019</th>
+<td style="background:rgba(31,122,85,0.19);color:#0f3d2b">+5</td>
+<td style="background:rgba(31,122,85,0.57);color:#fff">+29</td>
+<td style="background:rgba(31,122,85,0.73);color:#fff">+39</td>
+<td style="background:rgba(31,122,85,0.68);color:#fff">+36</td>
+<td style="background:rgba(31,122,85,0.90);color:#fff">+69</td>
+<td style="background:rgba(31,122,85,0.42);color:#0f3d2b">+19</td>
+<td style="background:rgba(31,122,85,0.15);color:#0f3d2b">+2</td>
+<td style="background:rgba(31,122,85,0.16);color:#0f3d2b">+2</td>
+<td style="background:rgba(31,122,85,0.36);color:#0f3d2b">+15</td>
+<td style="background:rgba(177,67,47,0.31);color:#5a1f14">-10</td>
+<td style="background:rgba(31,122,85,0.30);color:#0f3d2b">+12</td>
+<td style="background:rgba(31,122,85,0.29);color:#0f3d2b">+11</td>
+<td class="tot pos">+594%</td></tr>
+<tr><th>2020</th>
+<td style="background:rgba(31,122,85,0.35);color:#0f3d2b">+15</td>
+<td style="background:rgba(177,67,47,0.18);color:#5a1f14">-3</td>
+<td style="background:rgba(31,122,85,0.66);color:#fff">+35</td>
+<td style="background:rgba(177,67,47,0.28);color:#5a1f14">-8</td>
+<td style="background:rgba(31,122,85,0.21);color:#0f3d2b">+6</td>
+<td style="background:rgba(177,67,47,0.13);color:#5a1f14">-1</td>
+<td style="background:rgba(31,122,85,0.49);color:#fff">+23</td>
+<td style="background:rgba(31,122,85,0.28);color:#0f3d2b">+10</td>
+<td style="background:rgba(31,122,85,0.17);color:#0f3d2b">+3</td>
+<td style="background:rgba(31,122,85,0.49);color:#fff">+24</td>
+<td style="background:rgba(31,122,85,0.77);color:#fff">+42</td>
+<td style="background:rgba(31,122,85,0.88);color:#fff">+48</td>
+<td class="tot pos">+431%</td></tr>
+<tr><th>2021</th>
+<td style="background:rgba(31,122,85,0.41);color:#0f3d2b">+19</td>
+<td style="background:rgba(31,122,85,0.90);color:#fff">+269</td>
+<td style="background:rgba(31,122,85,0.75);color:#fff">+41</td>
+<td style="background:rgba(31,122,85,0.81);color:#fff">+44</td>
+<td style="background:rgba(177,67,47,0.47);color:#fff">-18</td>
+<td style="background:rgba(31,122,85,0.23);color:#0f3d2b">+7</td>
+<td style="background:rgba(31,122,85,0.13);color:#0f3d2b">+1</td>
+<td style="background:rgba(31,122,85,0.43);color:#0f3d2b">+20</td>
+<td style="background:rgba(177,67,47,0.26);color:#5a1f14">-7</td>
+<td style="background:rgba(31,122,85,0.21);color:#0f3d2b">+6</td>
+<td style="background:rgba(31,122,85,0.22);color:#0f3d2b">+6</td>
+<td style="background:rgba(31,122,85,0.24);color:#0f3d2b">+7</td>
+<td class="tot pos">+958%</td></tr>
+<tr><th>2022</th>
+<td style="background:rgba(31,122,85,0.38);color:#0f3d2b">+16</td>
+<td style="background:rgba(177,67,47,0.45);color:#5a1f14">-17</td>
+<td style="background:rgba(31,122,85,0.16);color:#0f3d2b">+3</td>
+<td style="background:rgba(177,67,47,0.38);color:#5a1f14">-13</td>
+<td style="background:rgba(31,122,85,0.45);color:#0f3d2b">+21</td>
+<td style="background:rgba(31,122,85,0.64);color:#fff">+33</td>
+<td style="background:rgba(177,67,47,0.33);color:#5a1f14">-11</td>
+<td style="background:rgba(177,67,47,0.20);color:#5a1f14">-4</td>
+<td style="background:rgba(177,67,47,0.22);color:#5a1f14">-5</td>
+<td style="background:rgba(177,67,47,0.25);color:#5a1f14">-7</td>
+<td style="background:rgba(177,67,47,0.90);color:#fff">-42</td>
+<td style="background:rgba(31,122,85,0.16);color:#0f3d2b">+3</td>
+<td class="tot neg">-37%</td></tr>
+<tr><th>2023</th>
+<td style="background:rgba(31,122,85,0.69);color:#fff">+37</td>
+<td style="background:rgba(177,67,47,0.14);color:#5a1f14">-1</td>
+<td style="background:rgba(177,67,47,0.45);color:#5a1f14">-17</td>
+<td style="background:rgba(177,67,47,0.18);color:#5a1f14">-3</td>
+<td style="background:rgba(177,67,47,0.21);color:#5a1f14">-5</td>
+<td style="background:rgba(31,122,85,0.40);color:#0f3d2b">+18</td>
+<td style="background:rgba(177,67,47,0.19);color:#5a1f14">-4</td>
+<td style="background:rgba(31,122,85,0.46);color:#0f3d2b">+22</td>
+<td style="background:rgba(177,67,47,0.15);color:#5a1f14">-1</td>
+<td style="background:rgba(31,122,85,0.67);color:#fff">+35</td>
+<td style="background:rgba(31,122,85,0.25);color:#0f3d2b">+8</td>
+<td style="background:rgba(31,122,85,0.63);color:#fff">+33</td>
+<td class="tot pos">+176%</td></tr>
+<tr><th>2024</th>
+<td style="background:rgba(177,67,47,0.26);color:#5a1f14">-7</td>
+<td style="background:rgba(31,122,85,0.90);color:#fff">+64</td>
+<td style="background:rgba(31,122,85,0.83);color:#fff">+46</td>
+<td style="background:rgba(177,67,47,0.28);color:#5a1f14">-8</td>
+<td style="background:rgba(177,67,47,0.22);color:#5a1f14">-5</td>
+<td style="background:rgba(31,122,85,0.19);color:#0f3d2b">+4</td>
+<td style="background:rgba(177,67,47,0.22);color:#5a1f14">-5</td>
+<td style="background:rgba(177,67,47,0.56);color:#fff">-23</td>
+<td style="background:rgba(177,67,47,0.16);color:#5a1f14">-2</td>
+<td style="background:rgba(31,122,85,0.25);color:#0f3d2b">+9</td>
+<td style="background:rgba(31,122,85,0.43);color:#0f3d2b">+20</td>
+<td style="background:rgba(31,122,85,0.15);color:#0f3d2b">+2</td>
+<td class="tot pos">+92%</td></tr>
+<tr><th>2025</th>
+<td style="background:rgba(177,67,47,0.32);color:#5a1f14">-10</td>
+<td style="background:rgba(31,122,85,0.14);color:#0f3d2b">+1</td>
+<td style="background:rgba(177,67,47,0.25);color:#5a1f14">-7</td>
+<td style="background:rgba(31,122,85,0.25);color:#0f3d2b">+8</td>
+<td style="background:rgba(31,122,85,0.36);color:#0f3d2b">+16</td>
+<td style="background:rgba(177,67,47,0.44);color:#5a1f14">-17</td>
+<td style="background:rgba(31,122,85,0.48);color:#fff">+23</td>
+<td style="background:rgba(31,122,85,0.31);color:#0f3d2b">+12</td>
+<td style="background:rgba(31,122,85,0.25);color:#0f3d2b">+8</td>
+<td style="background:rgba(177,67,47,0.19);color:#5a1f14">-4</td>
+<td style="background:rgba(31,122,85,0.53);color:#fff">+26</td>
+<td style="background:rgba(31,122,85,0.15);color:#0f3d2b">+2</td>
+<td class="tot pos">+63%</td></tr>
+<tr><th>2026</th>
+<td style="background:rgba(31,122,85,0.13);color:#0f3d2b">+1</td>
+<td style="background:rgba(31,122,85,0.57);color:#fff">+29</td>
+<td style="background:rgba(177,67,47,0.36);color:#5a1f14">-12</td>
+<td style="background:rgba(177,67,47,0.21);color:#5a1f14">-5</td>
+<td style="background:rgba(31,122,85,0.24);color:#0f3d2b">+8</td>
+<td style="background:rgba(31,122,85,0.25);color:#0f3d2b">+9</td>
+<td style="background:rgba(177,67,47,0.35);color:#5a1f14">-12</td>
+<td style="background:rgba(31,122,85,0.39);color:#0f3d2b">+17</td>
+<td style="background:rgba(31,122,85,0.40);color:#0f3d2b">+18</td>
+<td style="background:rgba(177,67,47,0.18);color:#5a1f14">-3</td>
+<td class="na">·</td>
+<td class="na">·</td>
+<td class="tot pos">+51%</td></tr>
+</tbody></table></div>
+<p class="cap">초록 = 플러스 달, 빨강 = 마이너스 달. 오른쪽 끝은 연간 수익률(연속 운용 기준). 2017년 12월은 지표 준비 기간이라 거래 없음. 2026년은 10월 10일까지.</p></div>
+
+<div class="kpi" style="margin-top:26px">
+  <div class="k gold"><b class="num">+1.79%</b><span>주 복리 수익률 (기하평균)<br>= 458주 동안 매주 이 비율로 불어난 셈 · 중앙값 +0.6%</span></div>
+  <div class="k"><b class="num">251/458</b><span>플러스로 끝난 주<br>= 55% · 마이너스 주 207번 · 최장 연속 마이너스 8주</span></div>
+  <div class="k bad"><b class="num">−37%</b><span>최악의 한 주 (2022.11.07~11.13)<br>최고의 한 주 +96% (2021.02.15~02.21)</span></div>
+</div>
+<div class="chart"><h4>주별 수익률 달력 — 9년 × 53주, 칸 하나가 한 주 (%)</h4>
+<div class="heatwrap"><div style="min-width:760px"><svg viewBox="0 0 860 212" class="svg wk" role="img" aria-label="주별 수익률 달력">
+<text x="59.5" y="16" class="ax" text-anchor="middle">1주</text>
+<text x="194.7" y="16" class="ax" text-anchor="middle">10주</text>
+<text x="344.9" y="16" class="ax" text-anchor="middle">20주</text>
+<text x="495.1" y="16" class="ax" text-anchor="middle">30주</text>
+<text x="645.2" y="16" class="ax" text-anchor="middle">40주</text>
+<text x="795.4" y="16" class="ax" text-anchor="middle">50주</text>
+<text x="44" y="37.6" class="ax yr" text-anchor="end">2018</text>
+<text x="44" y="57.6" class="ax yr" text-anchor="end">2019</text>
+<text x="44" y="77.6" class="ax yr" text-anchor="end">2020</text>
+<text x="44" y="97.6" class="ax yr" text-anchor="end">2021</text>
+<text x="44" y="117.6" class="ax yr" text-anchor="end">2022</text>
+<text x="44" y="137.6" class="ax yr" text-anchor="end">2023</text>
+<text x="44" y="157.6" class="ax yr" text-anchor="end">2024</text>
+<text x="44" y="177.6" class="ax yr" text-anchor="end">2025</text>
+<text x="44" y="197.6" class="ax yr" text-anchor="end">2026</text>
+<rect x="52.8" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2018.01.01~01.07 · +50.5% · 주말 자산 $5,253</title></rect>
+<rect x="67.8" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.14)"><title>2018.01.08~01.14 · +1.0% · 주말 자산 $5,305</title></rect>
+<rect x="82.8" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.79)"><title>2018.01.15~01.21 · -16.2% · 주말 자산 $4,446</title></rect>
+<rect x="97.9" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.19)"><title>2018.01.22~01.28 · -2.2% · 주말 자산 $4,349</title></rect>
+<rect x="112.9" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.40)"><title>2018.01.29~02.04 · +7.0% · 주말 자산 $4,653</title></rect>
+<rect x="127.9" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2018.02.05~02.11 · -0.7% · 주말 자산 $4,621 · 35봉(부분)</title></rect>
+<rect x="142.9" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.58)"><title>2018.02.12~02.18 · -11.2% · 주말 자산 $4,104</title></rect>
+<rect x="157.9" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.23)"><title>2018.02.19~02.25 · +3.1% · 주말 자산 $4,232</title></rect>
+<rect x="173.0" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.37)"><title>2018.02.26~03.04 · -6.4% · 주말 자산 $3,963</title></rect>
+<rect x="188.0" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.23)"><title>2018.03.05~03.11 · -3.0% · 주말 자산 $3,845</title></rect>
+<rect x="203.0" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.18)"><title>2018.03.12~03.18 · +1.8% · 주말 자산 $3,916</title></rect>
+<rect x="218.0" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.41)"><title>2018.03.19~03.25 · -7.3% · 주말 자산 $3,631</title></rect>
+<rect x="233.0" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.17)"><title>2018.03.26~04.01 · -1.6% · 주말 자산 $3,575</title></rect>
+<rect x="248.0" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.23)"><title>2018.04.02~04.08 · +3.0% · 주말 자산 $3,681</title></rect>
+<rect x="263.1" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.17)"><title>2018.04.09~04.15 · -1.7% · 주말 자산 $3,618</title></rect>
+<rect x="278.1" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.14)"><title>2018.04.16~04.22 · +1.0% · 주말 자산 $3,656</title></rect>
+<rect x="293.1" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.52)"><title>2018.04.23~04.29 · +10.0% · 주말 자산 $4,020</title></rect>
+<rect x="308.1" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.22)"><title>2018.04.30~05.06 · -2.8% · 주말 자산 $3,908</title></rect>
+<rect x="323.1" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.40)"><title>2018.05.07~05.13 · -7.0% · 주말 자산 $3,636</title></rect>
+<rect x="338.2" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.75)"><title>2018.05.14~05.20 · -15.2% · 주말 자산 $3,081</title></rect>
+<rect x="353.2" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.33)"><title>2018.05.21~05.27 · +5.4% · 주말 자산 $3,248</title></rect>
+<rect x="368.2" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.35)"><title>2018.05.28~06.03 · -5.9% · 주말 자산 $3,055</title></rect>
+<rect x="383.2" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.32)"><title>2018.06.04~06.10 · +5.3% · 주말 자산 $3,216</title></rect>
+<rect x="398.2" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.41)"><title>2018.06.11~06.17 · +7.4% · 주말 자산 $3,453</title></rect>
+<rect x="413.3" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.21)"><title>2018.06.18~06.24 · -2.6% · 주말 자산 $3,363</title></rect>
+<rect x="428.3" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2018.06.25~07.01 · -0.5% · 주말 자산 $3,346 · 40봉(부분)</title></rect>
+<rect x="443.3" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2018.07.02~07.08 · -0.8% · 주말 자산 $3,320 · 41봉(부분)</title></rect>
+<rect x="458.3" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.38)"><title>2018.07.09~07.15 · +6.5% · 주말 자산 $3,537</title></rect>
+<rect x="473.3" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.31)"><title>2018.07.16~07.22 · -5.0% · 주말 자산 $3,362</title></rect>
+<rect x="488.3" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.11)"><title>2018.07.23~07.29 · +0.2% · 주말 자산 $3,369</title></rect>
+<rect x="503.4" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.69)"><title>2018.07.30~08.05 · -13.8% · 주말 자산 $2,905</title></rect>
+<rect x="518.4" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2018.08.06~08.12 · -1.2% · 주말 자산 $2,869</title></rect>
+<rect x="533.4" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.30)"><title>2018.08.13~08.19 · +4.6% · 주말 자산 $3,002</title></rect>
+<rect x="548.4" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.18)"><title>2018.08.20~08.26 · -1.9% · 주말 자산 $2,944</title></rect>
+<rect x="563.4" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.28)"><title>2018.08.27~09.02 · -4.3% · 주말 자산 $2,818</title></rect>
+<rect x="578.5" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2018.09.03~09.09 · -0.7% · 주말 자산 $2,798</title></rect>
+<rect x="593.5" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.24)"><title>2018.09.10~09.16 · -3.4% · 주말 자산 $2,704</title></rect>
+<rect x="608.5" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.22)"><title>2018.09.17~09.23 · -2.9% · 주말 자산 $2,626</title></rect>
+<rect x="623.5" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2018.09.24~09.30 · +1.7% · 주말 자산 $2,671</title></rect>
+<rect x="638.5" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.21)"><title>2018.10.01~10.07 · -2.5% · 주말 자산 $2,604</title></rect>
+<rect x="653.6" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.90)"><title>2018.10.08~10.14 · -18.8% · 주말 자산 $2,115</title></rect>
+<rect x="668.6" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.58)"><title>2018.10.15~10.21 · -11.4% · 주말 자산 $1,874</title></rect>
+<rect x="683.6" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.18)"><title>2018.10.22~10.28 · +1.9% · 주말 자산 $1,911</title></rect>
+<rect x="698.6" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.11)"><title>2018.10.29~11.04 · -0.2% · 주말 자산 $1,907</title></rect>
+<rect x="713.6" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.26)"><title>2018.11.05~11.11 · +3.8% · 주말 자산 $1,980</title></rect>
+<rect x="728.6" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2018.11.12~11.18 · +27.7% · 주말 자산 $2,529 · 41봉(부분)</title></rect>
+<rect x="743.7" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2018.11.19~11.25 · +41.6% · 주말 자산 $3,580</title></rect>
+<rect x="758.7" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2018.11.26~12.02 · -0.4% · 주말 자산 $3,566</title></rect>
+<rect x="773.7" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.46)"><title>2018.12.03~12.09 · +8.5% · 주말 자산 $3,870</title></rect>
+<rect x="788.7" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.26)"><title>2018.12.10~12.16 · +3.6% · 주말 자산 $4,011</title></rect>
+<rect x="803.7" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.57)"><title>2018.12.17~12.23 · -11.2% · 주말 자산 $3,564</title></rect>
+<rect x="818.8" y="25.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.18)"><title>2018.12.24~12.30 · +1.8% · 주말 자산 $3,627</title></rect>
+<rect x="52.8" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2018.12.31~01.06 · +0.5% · 주말 자산 $3,645</title></rect>
+<rect x="67.8" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2019.01.07~01.13 · -1.2% · 주말 자산 $3,601</title></rect>
+<rect x="82.8" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.35)"><title>2019.01.14~01.20 · +5.9% · 주말 자산 $3,814</title></rect>
+<rect x="97.9" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.27)"><title>2019.01.21~01.27 · +4.0% · 주말 자산 $3,968</title></rect>
+<rect x="112.9" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2019.01.28~02.03 · -0.9% · 주말 자산 $3,931</title></rect>
+<rect x="127.9" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.66)"><title>2019.02.04~02.10 · +13.3% · 주말 자산 $4,453</title></rect>
+<rect x="142.9" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2019.02.11~02.17 · +1.5% · 주말 자산 $4,522</title></rect>
+<rect x="157.9" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.31)"><title>2019.02.18~02.24 · +5.0% · 주말 자산 $4,750</title></rect>
+<rect x="173.0" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.46)"><title>2019.02.25~03.03 · +8.5% · 주말 자산 $5,155</title></rect>
+<rect x="188.0" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.75)"><title>2019.03.04~03.10 · +15.2% · 주말 자산 $5,940</title></rect>
+<rect x="203.0" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.33)"><title>2019.03.11~03.17 · +5.4% · 주말 자산 $6,263 · 41봉(부분)</title></rect>
+<rect x="218.0" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.34)"><title>2019.03.18~03.24 · +5.7% · 주말 자산 $6,617</title></rect>
+<rect x="233.0" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.21)"><title>2019.03.25~03.31 · +2.7% · 주말 자산 $6,793</title></rect>
+<rect x="248.0" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2019.04.01~04.07 · +25.7% · 주말 자산 $8,537</title></rect>
+<rect x="263.1" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.11)"><title>2019.04.08~04.14 · -0.2% · 주말 자산 $8,517</title></rect>
+<rect x="278.1" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.59)"><title>2019.04.15~04.21 · +11.5% · 주말 자산 $9,496</title></rect>
+<rect x="293.1" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2019.04.22~04.28 · -1.0% · 주말 자산 $9,401</title></rect>
+<rect x="308.1" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.39)"><title>2019.04.29~05.05 · +6.9% · 주말 자산 $10,046</title></rect>
+<rect x="323.1" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.66)"><title>2019.05.06~05.12 · +13.2% · 주말 자산 $11,369</title></rect>
+<rect x="338.2" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2019.05.13~05.19 · +26.8% · 주말 자산 $14,410 · 40봉(부분)</title></rect>
+<rect x="353.2" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.49)"><title>2019.05.20~05.26 · +9.2% · 주말 자산 $15,734</title></rect>
+<rect x="368.2" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.14)"><title>2019.05.27~06.02 · +1.0% · 주말 자산 $15,888</title></rect>
+<rect x="383.2" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.63)"><title>2019.06.03~06.09 · -12.4% · 주말 자산 $13,921</title></rect>
+<rect x="398.2" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.75)"><title>2019.06.10~06.16 · +15.2% · 주말 자산 $16,038</title></rect>
+<rect x="413.3" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2019.06.17~06.23 · +21.5% · 주말 자산 $19,481</title></rect>
+<rect x="428.3" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.30)"><title>2019.06.24~06.30 · -4.7% · 주말 자산 $18,576</title></rect>
+<rect x="443.3" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.27)"><title>2019.07.01~07.07 · +4.0% · 주말 자산 $19,313</title></rect>
+<rect x="458.3" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.23)"><title>2019.07.08~07.14 · -3.1% · 주말 자산 $18,710</title></rect>
+<rect x="473.3" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2019.07.15~07.21 · -0.7% · 주말 자산 $18,581</title></rect>
+<rect x="488.3" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.27)"><title>2019.07.22~07.28 · +4.0% · 주말 자산 $19,330</title></rect>
+<rect x="503.4" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.29)"><title>2019.07.29~08.04 · -4.4% · 주말 자산 $18,488</title></rect>
+<rect x="518.4" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2019.08.05~08.11 · -0.5% · 주말 자산 $18,387</title></rect>
+<rect x="533.4" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.55)"><title>2019.08.12~08.18 · -10.6% · 주말 자산 $16,436 · 41봉(부분)</title></rect>
+<rect x="548.4" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.30)"><title>2019.08.19~08.25 · +4.7% · 주말 자산 $17,204</title></rect>
+<rect x="563.4" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.59)"><title>2019.08.26~09.01 · +11.5% · 주말 자산 $19,180</title></rect>
+<rect x="578.5" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.30)"><title>2019.09.02~09.08 · -4.7% · 주말 자산 $18,289</title></rect>
+<rect x="593.5" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.25)"><title>2019.09.09~09.15 · +3.5% · 주말 자산 $18,919</title></rect>
+<rect x="608.5" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.15)"><title>2019.09.16~09.22 · +1.2% · 주말 자산 $19,155</title></rect>
+<rect x="623.5" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.92)"><title>2019.09.23~09.29 · +19.3% · 주말 자산 $22,859</title></rect>
+<rect x="638.5" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.16)"><title>2019.09.30~10.06 · +1.5% · 주말 자산 $23,197</title></rect>
+<rect x="653.6" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.35)"><title>2019.10.07~10.13 · -5.8% · 주말 자산 $21,857</title></rect>
+<rect x="668.6" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.11)"><title>2019.10.14~10.20 · +0.2% · 주말 자산 $21,913</title></rect>
+<rect x="683.6" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.43)"><title>2019.10.21~10.27 · -7.9% · 주말 자산 $20,188</title></rect>
+<rect x="698.6" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.15)"><title>2019.10.28~11.03 · +1.1% · 주말 자산 $20,414</title></rect>
+<rect x="713.6" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2019.11.04~11.10 · -0.5% · 주말 자산 $20,318</title></rect>
+<rect x="728.6" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.19)"><title>2019.11.11~11.17 · -2.2% · 주말 자산 $19,877</title></rect>
+<rect x="743.7" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2019.11.18~11.24 · +22.8% · 주말 자산 $24,415</title></rect>
+<rect x="758.7" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.31)"><title>2019.11.25~12.01 · -5.0% · 주말 자산 $23,188</title></rect>
+<rect x="773.7" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2019.12.02~12.08 · -1.1% · 주말 자산 $22,924</title></rect>
+<rect x="788.7" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.42)"><title>2019.12.09~12.15 · +7.5% · 주말 자산 $24,654</title></rect>
+<rect x="803.7" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2019.12.16~12.22 · -1.2% · 주말 자산 $24,346</title></rect>
+<rect x="818.8" y="45.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2019.12.23~12.29 · +0.5% · 주말 자산 $24,475</title></rect>
+<rect x="52.8" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.14)"><title>2019.12.30~01.05 · +0.8% · 주말 자산 $24,677</title></rect>
+<rect x="67.8" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.21)"><title>2020.01.06~01.12 · -2.6% · 주말 자산 $24,026</title></rect>
+<rect x="82.8" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.62)"><title>2020.01.13~01.19 · +12.2% · 주말 자산 $26,950</title></rect>
+<rect x="97.9" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2020.01.20~01.26 · -0.8% · 주말 자산 $26,721</title></rect>
+<rect x="112.9" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.46)"><title>2020.01.27~02.02 · +8.6% · 주말 자산 $29,005</title></rect>
+<rect x="127.9" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2020.02.03~02.09 · +24.7% · 주말 자산 $36,165</title></rect>
+<rect x="142.9" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.30)"><title>2020.02.10~02.16 · -4.7% · 주말 자산 $34,480</title></rect>
+<rect x="157.9" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.17)"><title>2020.02.17~02.23 · -1.7% · 주말 자산 $33,904 · 41봉(부분)</title></rect>
+<rect x="173.0" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.81)"><title>2020.02.24~03.01 · -16.6% · 주말 자산 $28,257</title></rect>
+<rect x="188.0" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.51)"><title>2020.03.02~03.08 · +9.6% · 주말 자산 $30,981</title></rect>
+<rect x="203.0" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2020.03.09~03.15 · +33.9% · 주말 자산 $41,477</title></rect>
+<rect x="218.0" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.26)"><title>2020.03.16~03.22 · -3.6% · 주말 자산 $39,964</title></rect>
+<rect x="233.0" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2020.03.23~03.29 · -0.6% · 주말 자산 $39,729</title></rect>
+<rect x="248.0" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.49)"><title>2020.03.30~04.05 · -9.1% · 주말 자산 $36,122</title></rect>
+<rect x="263.1" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.76)"><title>2020.04.06~04.12 · -15.6% · 주말 자산 $30,480</title></rect>
+<rect x="278.1" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.11)"><title>2020.04.13~04.19 · -0.3% · 주말 자산 $30,372</title></rect>
+<rect x="293.1" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.32)"><title>2020.04.20~04.26 · +5.2% · 주말 자산 $31,962</title></rect>
+<rect x="308.1" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.56)"><title>2020.04.27~05.03 · +10.8% · 주말 자산 $35,414</title></rect>
+<rect x="323.1" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.32)"><title>2020.05.04~05.10 · -5.1% · 주말 자산 $33,619</title></rect>
+<rect x="338.2" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.49)"><title>2020.05.11~05.17 · +9.1% · 주말 자산 $36,667</title></rect>
+<rect x="353.2" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.40)"><title>2020.05.18~05.24 · -7.0% · 주말 자산 $34,095</title></rect>
+<rect x="368.2" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.43)"><title>2020.05.25~05.31 · +7.7% · 주말 자산 $36,736</title></rect>
+<rect x="383.2" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.21)"><title>2020.06.01~06.07 · +2.6% · 주말 자산 $37,702</title></rect>
+<rect x="398.2" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.28)"><title>2020.06.08~06.14 · -4.3% · 주말 자산 $36,076</title></rect>
+<rect x="413.3" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2020.06.15~06.21 · -0.8% · 주말 자산 $35,807</title></rect>
+<rect x="428.3" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.20)"><title>2020.06.22~06.28 · +2.3% · 주말 자산 $36,629</title></rect>
+<rect x="443.3" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.10)"><title>2020.06.29~07.05 · +0.0% · 주말 자산 $36,632</title></rect>
+<rect x="458.3" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.34)"><title>2020.07.06~07.12 · -5.5% · 주말 자산 $34,604</title></rect>
+<rect x="473.3" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.10)"><title>2020.07.13~07.19 · +0.1% · 주말 자산 $34,620</title></rect>
+<rect x="488.3" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.42)"><title>2020.07.20~07.26 · +7.5% · 주말 자산 $37,212</title></rect>
+<rect x="503.4" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.92)"><title>2020.07.27~08.02 · +19.2% · 주말 자산 $44,359</title></rect>
+<rect x="518.4" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.55)"><title>2020.08.03~08.09 · +10.5% · 주말 자산 $49,007</title></rect>
+<rect x="533.4" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.32)"><title>2020.08.10~08.16 · +5.2% · 주말 자산 $51,530</title></rect>
+<rect x="548.4" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.38)"><title>2020.08.17~08.23 · -6.7% · 주말 자산 $48,086</title></rect>
+<rect x="563.4" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.32)"><title>2020.08.24~08.30 · +5.1% · 주말 자산 $50,537</title></rect>
+<rect x="578.5" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.62)"><title>2020.08.31~09.06 · -12.2% · 주말 자산 $44,371</title></rect>
+<rect x="593.5" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2020.09.07~09.13 · +23.9% · 주말 자산 $55,000</title></rect>
+<rect x="608.5" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.72)"><title>2020.09.14~09.20 · -14.5% · 주말 자산 $47,028</title></rect>
+<rect x="623.5" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2020.09.21~09.27 · +0.5% · 주말 자산 $47,243</title></rect>
+<rect x="638.5" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.47)"><title>2020.09.28~10.04 · +8.6% · 주말 자산 $51,304</title></rect>
+<rect x="653.6" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.11)"><title>2020.10.05~10.11 · -0.1% · 주말 자산 $51,239</title></rect>
+<rect x="668.6" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.32)"><title>2020.10.12~10.18 · +5.2% · 주말 자산 $53,880</title></rect>
+<rect x="683.6" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.69)"><title>2020.10.19~10.25 · +13.8% · 주말 자산 $61,301</title></rect>
+<rect x="698.6" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.23)"><title>2020.10.26~11.01 · +3.1% · 주말 자산 $63,177</title></rect>
+<rect x="713.6" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.49)"><title>2020.11.02~11.08 · +9.1% · 주말 자산 $68,950</title></rect>
+<rect x="728.6" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.29)"><title>2020.11.09~11.15 · +4.4% · 주말 자산 $71,959</title></rect>
+<rect x="743.7" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.71)"><title>2020.11.16~11.22 · +14.3% · 주말 자산 $82,274</title></rect>
+<rect x="758.7" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.19)"><title>2020.11.23~11.29 · -2.0% · 주말 자산 $80,584</title></rect>
+<rect x="773.7" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.38)"><title>2020.11.30~12.06 · +6.7% · 주말 자산 $85,958</title></rect>
+<rect x="788.7" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.34)"><title>2020.12.07~12.13 · -5.5% · 주말 자산 $81,198</title></rect>
+<rect x="803.7" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2020.12.14~12.20 · +28.3% · 주말 자산 $104,201</title></rect>
+<rect x="818.8" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.66)"><title>2020.12.21~12.27 · +13.2% · 주말 자산 $118,010</title></rect>
+<rect x="833.8" y="65.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2020.12.28~01.03 · +30.7% · 주말 자산 $154,245</title></rect>
+<rect x="52.8" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.56)"><title>2021.01.04~01.10 · +10.8% · 주말 자산 $170,845</title></rect>
+<rect x="67.8" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2021.01.11~01.17 · +0.5% · 주말 자산 $171,751</title></rect>
+<rect x="82.8" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.61)"><title>2021.01.18~01.24 · -12.1% · 주말 자산 $150,966</title></rect>
+<rect x="97.9" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.31)"><title>2021.01.25~01.31 · +5.0% · 주말 자산 $158,565</title></rect>
+<rect x="112.9" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2021.02.01~02.07 · +45.4% · 주말 자산 $230,617</title></rect>
+<rect x="127.9" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2021.02.08~02.14 · +81.4% · 주말 자산 $418,271</title></rect>
+<rect x="142.9" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2021.02.15~02.21 · +96.5% · 주말 자산 $821,683</title></rect>
+<rect x="157.9" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.95)"><title>2021.02.22~02.28 · -28.8% · 주말 자산 $585,197</title></rect>
+<rect x="173.0" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.69)"><title>2021.03.01~03.07 · +13.8% · 주말 자산 $666,033</title></rect>
+<rect x="188.0" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.56)"><title>2021.03.08~03.14 · +10.8% · 주말 자산 $737,601</title></rect>
+<rect x="203.0" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.11)"><title>2021.03.15~03.21 · -0.1% · 주말 자산 $736,512</title></rect>
+<rect x="218.0" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2021.03.22~03.28 · +0.6% · 주말 자산 $740,725</title></rect>
+<rect x="233.0" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.89)"><title>2021.03.29~04.04 · +18.6% · 주말 자산 $878,342</title></rect>
+<rect x="248.0" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2021.04.05~04.11 · +27.4% · 주말 자산 $1,118,641</title></rect>
+<rect x="263.1" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.43)"><title>2021.04.12~04.18 · -7.7% · 주말 자산 $1,033,112</title></rect>
+<rect x="278.1" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.32)"><title>2021.04.19~04.25 · +5.1% · 주말 자산 $1,085,803</title></rect>
+<rect x="293.1" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.52)"><title>2021.04.26~05.02 · +9.9% · 주말 자산 $1,193,237</title></rect>
+<rect x="308.1" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.25)"><title>2021.05.03~05.09 · +3.6% · 주말 자산 $1,236,092</title></rect>
+<rect x="323.1" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.58)"><title>2021.05.10~05.16 · -11.4% · 주말 자산 $1,095,612</title></rect>
+<rect x="338.2" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2021.05.17~05.23 · -0.9% · 주말 자산 $1,085,360</title></rect>
+<rect x="353.2" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.39)"><title>2021.05.24~05.30 · -6.9% · 주말 자산 $1,010,779</title></rect>
+<rect x="368.2" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.42)"><title>2021.05.31~06.06 · -7.4% · 주말 자산 $935,706</title></rect>
+<rect x="383.2" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2021.06.07~06.13 · +1.6% · 주말 자산 $950,579</title></rect>
+<rect x="398.2" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.31)"><title>2021.06.14~06.20 · +4.9% · 주말 자산 $996,996</title></rect>
+<rect x="413.3" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.35)"><title>2021.06.21~06.27 · +5.8% · 주말 자산 $1,054,661</title></rect>
+<rect x="428.3" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.18)"><title>2021.06.28~07.04 · -2.0% · 주말 자산 $1,033,646</title></rect>
+<rect x="443.3" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2021.07.05~07.11 · -0.6% · 주말 자산 $1,027,434</title></rect>
+<rect x="458.3" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.24)"><title>2021.07.12~07.18 · +3.3% · 주말 자산 $1,061,197</title></rect>
+<rect x="473.3" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.19)"><title>2021.07.19~07.25 · -2.2% · 주말 자산 $1,037,655</title></rect>
+<rect x="488.3" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2021.07.26~08.01 · -0.7% · 주말 자산 $1,029,946</title></rect>
+<rect x="503.4" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.31)"><title>2021.08.02~08.08 · +5.0% · 주말 자산 $1,081,677</title></rect>
+<rect x="518.4" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.58)"><title>2021.08.09~08.15 · +11.3% · 주말 자산 $1,203,443</title></rect>
+<rect x="533.4" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.33)"><title>2021.08.16~08.22 · +5.3% · 주말 자산 $1,267,598</title></rect>
+<rect x="548.4" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.20)"><title>2021.08.23~08.29 · +2.3% · 주말 자산 $1,296,442</title></rect>
+<rect x="563.4" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.29)"><title>2021.08.30~09.05 · +4.5% · 주말 자산 $1,354,469</title></rect>
+<rect x="578.5" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.64)"><title>2021.09.06~09.12 · -12.7% · 주말 자산 $1,182,590</title></rect>
+<rect x="593.5" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.18)"><title>2021.09.13~09.19 · +1.9% · 주말 자산 $1,204,447</title></rect>
+<rect x="608.5" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2021.09.20~09.26 · +1.6% · 주말 자산 $1,223,252</title></rect>
+<rect x="623.5" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.80)"><title>2021.09.27~10.03 · -16.5% · 주말 자산 $1,021,263</title></rect>
+<rect x="638.5" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.25)"><title>2021.10.04~10.10 · +3.6% · 주말 자산 $1,057,888</title></rect>
+<rect x="653.6" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.62)"><title>2021.10.11~10.17 · +12.3% · 주말 자산 $1,188,204</title></rect>
+<rect x="668.6" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2021.10.18~10.24 · -0.5% · 주말 자산 $1,182,523</title></rect>
+<rect x="683.6" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.28)"><title>2021.10.25~10.31 · +4.3% · 주말 자산 $1,233,794</title></rect>
+<rect x="698.6" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.60)"><title>2021.11.01~11.07 · +11.7% · 주말 자산 $1,378,695</title></rect>
+<rect x="713.6" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.15)"><title>2021.11.08~11.14 · +1.2% · 주말 자산 $1,395,341</title></rect>
+<rect x="728.6" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.54)"><title>2021.11.15~11.21 · -10.3% · 주말 자산 $1,251,492</title></rect>
+<rect x="743.7" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.26)"><title>2021.11.22~11.28 · +3.7% · 주말 자산 $1,297,573</title></rect>
+<rect x="758.7" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.24)"><title>2021.11.29~12.05 · +3.3% · 주말 자산 $1,340,553</title></rect>
+<rect x="773.7" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.24)"><title>2021.12.06~12.12 · -3.4% · 주말 자산 $1,295,003</title></rect>
+<rect x="788.7" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.38)"><title>2021.12.13~12.19 · +6.6% · 주말 자산 $1,380,533</title></rect>
+<rect x="803.7" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.29)"><title>2021.12.20~12.26 · -4.5% · 주말 자산 $1,318,167</title></rect>
+<rect x="818.8" y="85.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.30)"><title>2021.12.27~01.02 · +4.8% · 주말 자산 $1,381,160</title></rect>
+<rect x="52.8" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.59)"><title>2022.01.03~01.09 · +11.5% · 주말 자산 $1,540,119</title></rect>
+<rect x="67.8" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.30)"><title>2022.01.10~01.16 · -4.8% · 주말 자산 $1,466,672</title></rect>
+<rect x="82.8" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.66)"><title>2022.01.17~01.23 · +13.3% · 주말 자산 $1,661,366</title></rect>
+<rect x="97.9" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2022.01.24~01.30 · -0.8% · 주말 자산 $1,648,368</title></rect>
+<rect x="112.9" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.34)"><title>2022.01.31~02.06 · -5.7% · 주말 자산 $1,553,853</title></rect>
+<rect x="127.9" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2022.02.07~02.13 · -1.1% · 주말 자산 $1,536,748</title></rect>
+<rect x="142.9" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.21)"><title>2022.02.14~02.20 · -2.6% · 주말 자산 $1,496,174</title></rect>
+<rect x="157.9" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.20)"><title>2022.02.21~02.27 · +2.4% · 주말 자산 $1,532,558</title></rect>
+<rect x="173.0" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.63)"><title>2022.02.28~03.06 · -12.4% · 주말 자산 $1,342,957</title></rect>
+<rect x="188.0" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2022.03.07~03.13 · +1.6% · 주말 자산 $1,363,796</title></rect>
+<rect x="203.0" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.35)"><title>2022.03.14~03.20 · -6.0% · 주말 자산 $1,282,265</title></rect>
+<rect x="218.0" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.59)"><title>2022.03.21~03.27 · +11.5% · 주말 자산 $1,429,608</title></rect>
+<rect x="233.0" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.24)"><title>2022.03.28~04.03 · +3.3% · 주말 자산 $1,477,057</title></rect>
+<rect x="248.0" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.58)"><title>2022.04.04~04.10 · -11.3% · 주말 자산 $1,310,345</title></rect>
+<rect x="263.1" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.38)"><title>2022.04.11~04.17 · -6.6% · 주말 자산 $1,223,578</title></rect>
+<rect x="278.1" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.43)"><title>2022.04.18~04.24 · -7.7% · 주말 자산 $1,129,421</title></rect>
+<rect x="293.1" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.25)"><title>2022.04.25~05.01 · +3.6% · 주말 자산 $1,170,204</title></rect>
+<rect x="308.1" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.75)"><title>2022.05.02~05.08 · +15.2% · 주말 자산 $1,348,261</title></rect>
+<rect x="323.1" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.59)"><title>2022.05.09~05.15 · +11.6% · 주말 자산 $1,504,986</title></rect>
+<rect x="338.2" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2022.05.16~05.22 · +0.7% · 주말 자산 $1,515,113</title></rect>
+<rect x="353.2" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.24)"><title>2022.05.23~05.29 · +3.2% · 주말 자산 $1,563,600</title></rect>
+<rect x="368.2" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.10)"><title>2022.05.30~06.05 · +0.1% · 주말 자산 $1,565,105</title></rect>
+<rect x="383.2" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.56)"><title>2022.06.06~06.12 · +10.9% · 주말 자산 $1,735,460</title></rect>
+<rect x="398.2" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.65)"><title>2022.06.13~06.19 · +12.9% · 주말 자산 $1,958,912</title></rect>
+<rect x="413.3" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.20)"><title>2022.06.20~06.26 · -2.5% · 주말 자산 $1,911,015</title></rect>
+<rect x="428.3" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.26)"><title>2022.06.27~07.03 · +3.8% · 주말 자산 $1,984,452</title></rect>
+<rect x="443.3" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.23)"><title>2022.07.04~07.10 · -3.2% · 주말 자산 $1,921,825</title></rect>
+<rect x="458.3" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2022.07.11~07.17 · -1.2% · 주말 자산 $1,898,930</title></rect>
+<rect x="473.3" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.27)"><title>2022.07.18~07.24 · -4.1% · 주말 자산 $1,821,894</title></rect>
+<rect x="488.3" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.24)"><title>2022.07.25~07.31 · -3.4% · 주말 자산 $1,760,713</title></rect>
+<rect x="503.4" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.45)"><title>2022.08.01~08.07 · +8.2% · 주말 자산 $1,904,296</title></rect>
+<rect x="518.4" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2022.08.08~08.14 · +0.4% · 주말 자산 $1,911,267</title></rect>
+<rect x="533.4" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.50)"><title>2022.08.15~08.21 · -9.4% · 주말 자산 $1,731,740</title></rect>
+<rect x="548.4" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2022.08.22~08.28 · -0.8% · 주말 자산 $1,718,504</title></rect>
+<rect x="563.4" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2022.08.29~09.04 · -1.2% · 주말 자산 $1,697,091</title></rect>
+<rect x="578.5" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.45)"><title>2022.09.05~09.11 · -8.3% · 주말 자산 $1,556,487</title></rect>
+<rect x="593.5" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.37)"><title>2022.09.12~09.18 · +6.3% · 주말 자산 $1,654,562</title></rect>
+<rect x="608.5" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.11)"><title>2022.09.19~09.25 · +0.3% · 주말 자산 $1,659,432</title></rect>
+<rect x="623.5" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.20)"><title>2022.09.26~10.02 · -2.3% · 주말 자산 $1,621,144</title></rect>
+<rect x="638.5" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.23)"><title>2022.10.03~10.09 · -3.2% · 주말 자산 $1,569,716</title></rect>
+<rect x="653.6" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.16)"><title>2022.10.10~10.16 · -1.5% · 주말 자산 $1,545,856</title></rect>
+<rect x="668.6" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.17)"><title>2022.10.17~10.23 · -1.7% · 주말 자산 $1,519,778</title></rect>
+<rect x="683.6" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.29)"><title>2022.10.24~10.30 · -4.4% · 주말 자산 $1,453,481</title></rect>
+<rect x="698.6" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.43)"><title>2022.10.31~11.06 · +7.8% · 주말 자산 $1,566,623</title></rect>
+<rect x="713.6" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.95)"><title>2022.11.07~11.13 · -36.8% · 주말 자산 $990,961</title></rect>
+<rect x="728.6" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2022.11.14~11.20 · -1.0% · 주말 자산 $980,861</title></rect>
+<rect x="743.7" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.48)"><title>2022.11.21~11.27 · -8.8% · 주말 자산 $894,114</title></rect>
+<rect x="758.7" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.29)"><title>2022.11.28~12.04 · -4.4% · 주말 자산 $854,509</title></rect>
+<rect x="773.7" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.19)"><title>2022.12.05~12.11 · -2.0% · 주말 자산 $837,351</title></rect>
+<rect x="788.7" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.25)"><title>2022.12.12~12.18 · +3.6% · 주말 자산 $867,603</title></rect>
+<rect x="803.7" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.18)"><title>2022.12.19~12.25 · +1.8% · 주말 자산 $883,150</title></rect>
+<rect x="818.8" y="105.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2022.12.26~01.01 · +0.6% · 주말 자산 $888,464</title></rect>
+<rect x="52.8" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.55)"><title>2023.01.02~01.08 · -10.5% · 주말 자산 $794,909</title></rect>
+<rect x="67.8" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2023.01.09~01.15 · +32.5% · 주말 자산 $1,052,837</title></rect>
+<rect x="82.8" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.57)"><title>2023.01.16~01.22 · +10.9% · 주말 자산 $1,168,078</title></rect>
+<rect x="97.9" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.45)"><title>2023.01.23~01.29 · +8.2% · 주말 자산 $1,264,449</title></rect>
+<rect x="112.9" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.19)"><title>2023.01.30~02.05 · -2.1% · 주말 자산 $1,237,978</title></rect>
+<rect x="127.9" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.45)"><title>2023.02.06~02.12 · -8.3% · 주말 자산 $1,135,287</title></rect>
+<rect x="142.9" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.65)"><title>2023.02.13~02.19 · +12.9% · 주말 자산 $1,282,053</title></rect>
+<rect x="157.9" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.26)"><title>2023.02.20~02.26 · -3.8% · 주말 자산 $1,232,842</title></rect>
+<rect x="173.0" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.24)"><title>2023.02.27~03.05 · -3.3% · 주말 자산 $1,192,223</title></rect>
+<rect x="188.0" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2023.03.06~03.12 · +1.6% · 주말 자산 $1,210,741</title></rect>
+<rect x="203.0" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.83)"><title>2023.03.13~03.19 · -17.1% · 주말 자산 $1,004,029</title></rect>
+<rect x="218.0" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2023.03.20~03.26 · -0.7% · 주말 자산 $997,068</title></rect>
+<rect x="233.0" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2023.03.27~04.02 · -0.9% · 주말 자산 $987,909</title></rect>
+<rect x="248.0" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2023.04.03~04.09 · -0.6% · 주말 자산 $982,275</title></rect>
+<rect x="263.1" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.24)"><title>2023.04.10~04.16 · +3.3% · 주말 자산 $1,014,494</title></rect>
+<rect x="278.1" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.49)"><title>2023.04.17~04.23 · -9.3% · 주말 자산 $920,574</title></rect>
+<rect x="293.1" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.31)"><title>2023.04.24~04.30 · +5.0% · 주말 자산 $966,139</title></rect>
+<rect x="308.1" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.39)"><title>2023.05.01~05.07 · -6.7% · 주말 자산 $901,057</title></rect>
+<rect x="323.1" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.14)"><title>2023.05.08~05.14 · +1.0% · 주말 자산 $909,743</title></rect>
+<rect x="338.2" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.19)"><title>2023.05.15~05.21 · +2.1% · 주말 자산 $929,328</title></rect>
+<rect x="353.2" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.36)"><title>2023.05.22~05.28 · -6.1% · 주말 자산 $872,672</title></rect>
+<rect x="368.2" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.40)"><title>2023.05.29~06.04 · +7.0% · 주말 자산 $933,377</title></rect>
+<rect x="383.2" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2023.06.05~06.11 · +23.3% · 주말 자산 $1,150,811</title></rect>
+<rect x="398.2" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.21)"><title>2023.06.12~06.18 · -2.5% · 주말 자산 $1,121,704</title></rect>
+<rect x="413.3" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.22)"><title>2023.06.19~06.25 · -2.8% · 주말 자산 $1,089,979</title></rect>
+<rect x="428.3" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2023.06.26~07.02 · -1.3% · 주말 자산 $1,076,050</title></rect>
+<rect x="443.3" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.15)"><title>2023.07.03~07.09 · +1.1% · 주말 자산 $1,088,202</title></rect>
+<rect x="458.3" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.17)"><title>2023.07.10~07.16 · -1.6% · 주말 자산 $1,070,883</title></rect>
+<rect x="473.3" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2023.07.17~07.23 · -0.6% · 주말 자산 $1,064,631</title></rect>
+<rect x="488.3" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.20)"><title>2023.07.24~07.30 · -2.4% · 주말 자산 $1,039,466</title></rect>
+<rect x="503.4" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.16)"><title>2023.07.31~08.06 · +1.4% · 주말 자산 $1,053,939</title></rect>
+<rect x="518.4" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2023.08.07~08.13 · +0.5% · 주말 자산 $1,058,735</title></rect>
+<rect x="533.4" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.88)"><title>2023.08.14~08.20 · +18.5% · 주말 자산 $1,254,299</title></rect>
+<rect x="548.4" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2023.08.21~08.27 · +0.5% · 주말 자산 $1,260,774</title></rect>
+<rect x="563.4" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2023.08.28~09.03 · +1.7% · 주말 자산 $1,281,982</title></rect>
+<rect x="578.5" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.15)"><title>2023.09.04~09.10 · +1.3% · 주말 자산 $1,298,450</title></rect>
+<rect x="593.5" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.20)"><title>2023.09.11~09.17 · -2.4% · 주말 자산 $1,266,828</title></rect>
+<rect x="608.5" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.22)"><title>2023.09.18~09.24 · +2.9% · 주말 자산 $1,303,216</title></rect>
+<rect x="623.5" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2023.09.25~10.01 · +0.8% · 주말 자산 $1,313,453</title></rect>
+<rect x="638.5" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2023.10.02~10.08 · +0.4% · 주말 자산 $1,318,300</title></rect>
+<rect x="653.6" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.26)"><title>2023.10.09~10.15 · -3.7% · 주말 자산 $1,270,009</title></rect>
+<rect x="668.6" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.61)"><title>2023.10.16~10.22 · +11.9% · 주말 자산 $1,421,306</title></rect>
+<rect x="683.6" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2023.10.23~10.29 · +20.2% · 주말 자산 $1,709,075</title></rect>
+<rect x="698.6" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.43)"><title>2023.10.30~11.05 · +7.8% · 주말 자산 $1,842,240</title></rect>
+<rect x="713.6" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.44)"><title>2023.11.06~11.12 · +8.0% · 주말 자산 $1,988,781</title></rect>
+<rect x="728.6" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2023.11.13~11.19 · +0.5% · 주말 자산 $1,999,363</title></rect>
+<rect x="743.7" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.31)"><title>2023.11.20~11.26 · -4.9% · 주말 자산 $1,900,651</title></rect>
+<rect x="758.7" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.27)"><title>2023.11.27~12.03 · +3.9% · 주말 자산 $1,975,462</title></rect>
+<rect x="773.7" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.56)"><title>2023.12.04~12.10 · +10.8% · 주말 자산 $2,189,337</title></rect>
+<rect x="788.7" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.39)"><title>2023.12.11~12.17 · -6.8% · 주말 자산 $2,041,569</title></rect>
+<rect x="803.7" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.56)"><title>2023.12.18~12.24 · +10.8% · 주말 자산 $2,261,135</title></rect>
+<rect x="818.8" y="125.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.45)"><title>2023.12.25~12.31 · +8.2% · 주말 자산 $2,446,839</title></rect>
+<rect x="52.8" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2024.01.01~01.07 · +0.7% · 주말 자산 $2,463,904</title></rect>
+<rect x="67.8" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.31)"><title>2024.01.08~01.14 · -4.8% · 주말 자산 $2,344,524</title></rect>
+<rect x="82.8" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.25)"><title>2024.01.15~01.21 · +3.6% · 주말 자산 $2,429,273</title></rect>
+<rect x="97.9" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.28)"><title>2024.01.22~01.28 · -4.2% · 주말 자산 $2,328,508</title></rect>
+<rect x="112.9" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.22)"><title>2024.01.29~02.04 · -2.9% · 주말 자산 $2,261,526</title></rect>
+<rect x="127.9" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.80)"><title>2024.02.05~02.11 · +16.4% · 주말 자산 $2,631,417</title></rect>
+<rect x="142.9" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.69)"><title>2024.02.12~02.18 · +13.8% · 주말 자산 $2,995,465</title></rect>
+<rect x="157.9" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.42)"><title>2024.02.19~02.25 · +7.5% · 주말 자산 $3,220,221</title></rect>
+<rect x="173.0" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2024.02.26~03.03 · +21.5% · 주말 자산 $3,911,895</title></rect>
+<rect x="188.0" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2024.03.04~03.10 · +24.4% · 주말 자산 $4,866,691</title></rect>
+<rect x="203.0" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.30)"><title>2024.03.11~03.17 · +4.8% · 주말 자산 $5,099,966</title></rect>
+<rect x="218.0" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.16)"><title>2024.03.18~03.24 · -1.5% · 주말 자산 $5,022,418</title></rect>
+<rect x="233.0" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.45)"><title>2024.03.25~03.31 · +8.3% · 주말 자산 $5,441,174</title></rect>
+<rect x="248.0" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.27)"><title>2024.04.01~04.07 · -3.9% · 주말 자산 $5,227,254</title></rect>
+<rect x="263.1" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.32)"><title>2024.04.08~04.14 · -5.3% · 주말 자산 $4,952,490</title></rect>
+<rect x="278.1" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.22)"><title>2024.04.15~04.21 · -2.9% · 주말 자산 $4,811,534</title></rect>
+<rect x="293.1" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.26)"><title>2024.04.22~04.28 · +3.8% · 주말 자산 $4,993,644</title></rect>
+<rect x="308.1" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.17)"><title>2024.04.29~05.05 · -1.7% · 주말 자산 $4,910,893</title></rect>
+<rect x="323.1" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.20)"><title>2024.05.06~05.12 · +2.5% · 주말 자산 $5,031,208</title></rect>
+<rect x="338.2" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.45)"><title>2024.05.13~05.19 · -8.1% · 주말 자산 $4,622,049</title></rect>
+<rect x="353.2" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.30)"><title>2024.05.20~05.26 · +4.7% · 주말 자산 $4,839,724</title></rect>
+<rect x="368.2" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2024.05.27~06.02 · -1.0% · 주말 자산 $4,790,197</title></rect>
+<rect x="383.2" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.49)"><title>2024.06.03~06.09 · +9.1% · 주말 자산 $5,224,360</title></rect>
+<rect x="398.2" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.55)"><title>2024.06.10~06.16 · -10.5% · 주말 자산 $4,676,354</title></rect>
+<rect x="413.3" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.32)"><title>2024.06.17~06.23 · +5.1% · 주말 자산 $4,913,198</title></rect>
+<rect x="428.3" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2024.06.24~06.30 · +0.5% · 주말 자산 $4,937,776</title></rect>
+<rect x="443.3" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.85)"><title>2024.07.01~07.07 · +17.6% · 주말 자산 $5,805,880</title></rect>
+<rect x="458.3" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.48)"><title>2024.07.08~07.14 · -9.0% · 주말 자산 $5,283,005</title></rect>
+<rect x="473.3" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.25)"><title>2024.07.15~07.21 · -3.5% · 주말 자산 $5,096,951</title></rect>
+<rect x="488.3" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.22)"><title>2024.07.22~07.28 · -2.9% · 주말 자산 $4,947,284</title></rect>
+<rect x="503.4" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.52)"><title>2024.07.29~08.04 · -9.8% · 주말 자산 $4,462,061</title></rect>
+<rect x="518.4" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2024.08.05~08.11 · -1.0% · 주말 자산 $4,418,880</title></rect>
+<rect x="533.4" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.23)"><title>2024.08.12~08.18 · -3.1% · 주말 자산 $4,280,672</title></rect>
+<rect x="548.4" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.43)"><title>2024.08.19~08.25 · -7.8% · 주말 자산 $3,946,114</title></rect>
+<rect x="563.4" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.26)"><title>2024.08.26~09.01 · -3.9% · 주말 자산 $3,793,811</title></rect>
+<rect x="578.5" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.27)"><title>2024.09.02~09.08 · +4.1% · 주말 자산 $3,949,788</title></rect>
+<rect x="593.5" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.53)"><title>2024.09.09~09.15 · -10.1% · 주말 자산 $3,552,108</title></rect>
+<rect x="608.5" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.26)"><title>2024.09.16~09.22 · +3.9% · 주말 자산 $3,689,541</title></rect>
+<rect x="623.5" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.20)"><title>2024.09.23~09.29 · +2.3% · 주말 자산 $3,775,361</title></rect>
+<rect x="638.5" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.38)"><title>2024.09.30~10.06 · -6.5% · 주말 자산 $3,528,371</title></rect>
+<rect x="653.6" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.11)"><title>2024.10.07~10.13 · +0.3% · 주말 자산 $3,539,545</title></rect>
+<rect x="668.6" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.58)"><title>2024.10.14~10.20 · +11.4% · 주말 자산 $3,942,947</title></rect>
+<rect x="683.6" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.23)"><title>2024.10.21~10.27 · -3.0% · 주말 자산 $3,822,557</title></rect>
+<rect x="698.6" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.32)"><title>2024.10.28~11.03 · -5.2% · 주말 자산 $3,625,656</title></rect>
+<rect x="713.6" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.43)"><title>2024.11.04~11.10 · +7.7% · 주말 자산 $3,904,011</title></rect>
+<rect x="728.6" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.46)"><title>2024.11.11~11.17 · +8.5% · 주말 자산 $4,237,472</title></rect>
+<rect x="743.7" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.57)"><title>2024.11.18~11.24 · +11.0% · 주말 자산 $4,704,674</title></rect>
+<rect x="758.7" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2024.11.25~12.01 · -0.9% · 주말 자산 $4,662,202</title></rect>
+<rect x="773.7" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.53)"><title>2024.12.02~12.08 · +10.2% · 주말 자산 $5,135,950</title></rect>
+<rect x="788.7" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2024.12.09~12.15 · +0.8% · 주말 자산 $5,175,549</title></rect>
+<rect x="803.7" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.60)"><title>2024.12.16~12.22 · -11.8% · 주말 자산 $4,562,989</title></rect>
+<rect x="818.8" y="145.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.21)"><title>2024.12.23~12.29 · +2.5% · 주말 자산 $4,678,029</title></rect>
+<rect x="52.8" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.19)"><title>2024.12.30~01.05 · -2.2% · 주말 자산 $4,575,375</title></rect>
+<rect x="67.8" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.32)"><title>2025.01.06~01.12 · -5.2% · 주말 자산 $4,339,572</title></rect>
+<rect x="82.8" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.30)"><title>2025.01.13~01.19 · -4.6% · 주말 자산 $4,140,184</title></rect>
+<rect x="97.9" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.25)"><title>2025.01.20~01.26 · +3.6% · 주말 자산 $4,288,144</title></rect>
+<rect x="112.9" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.20)"><title>2025.01.27~02.02 · +2.5% · 주말 자산 $4,393,434</title></rect>
+<rect x="127.9" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2025.02.03~02.09 · +0.4% · 주말 자산 $4,411,246</title></rect>
+<rect x="142.9" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.36)"><title>2025.02.10~02.16 · -6.1% · 주말 자산 $4,141,454</title></rect>
+<rect x="157.9" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.38)"><title>2025.02.17~02.23 · -6.6% · 주말 자산 $3,868,553</title></rect>
+<rect x="173.0" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2025.02.24~03.02 · +0.6% · 주말 자산 $3,891,411</title></rect>
+<rect x="188.0" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.78)"><title>2025.03.03~03.09 · +15.9% · 주말 자산 $4,510,953</title></rect>
+<rect x="203.0" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.34)"><title>2025.03.10~03.16 · -5.7% · 주말 자산 $4,255,645</title></rect>
+<rect x="218.0" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.33)"><title>2025.03.17~03.23 · -5.5% · 주말 자산 $4,021,541</title></rect>
+<rect x="233.0" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2025.03.24~03.30 · -0.9% · 주말 자산 $3,984,787</title></rect>
+<rect x="248.0" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.60)"><title>2025.03.31~04.06 · +11.8% · 주말 자산 $4,456,152</title></rect>
+<rect x="263.1" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.39)"><title>2025.04.07~04.13 · -6.7% · 주말 자산 $4,155,627</title></rect>
+<rect x="278.1" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.10)"><title>2025.04.14~04.20 · -0.1% · 주말 자산 $4,151,245</title></rect>
+<rect x="293.1" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.29)"><title>2025.04.21~04.27 · +4.5% · 주말 자산 $4,336,854</title></rect>
+<rect x="308.1" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.25)"><title>2025.04.28~05.04 · -3.6% · 주말 자산 $4,181,043</title></rect>
+<rect x="323.1" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2025.05.05~05.11 · +20.5% · 주말 자산 $5,039,601</title></rect>
+<rect x="338.2" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.18)"><title>2025.05.12~05.18 · +2.0% · 주말 자산 $5,138,903</title></rect>
+<rect x="353.2" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.29)"><title>2025.05.19~05.25 · +4.5% · 주말 자산 $5,369,069</title></rect>
+<rect x="368.2" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.35)"><title>2025.05.26~06.01 · -5.8% · 주말 자산 $5,058,491</title></rect>
+<rect x="383.2" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.18)"><title>2025.06.02~06.08 · -1.9% · 주말 자산 $4,960,299</title></rect>
+<rect x="398.2" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.17)"><title>2025.06.09~06.15 · -1.6% · 주말 자산 $4,881,003</title></rect>
+<rect x="413.3" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2025.06.16~06.22 · +0.4% · 주말 자산 $4,899,939</title></rect>
+<rect x="428.3" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.69)"><title>2025.06.23~06.29 · -13.9% · 주말 자산 $4,216,198</title></rect>
+<rect x="443.3" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.20)"><title>2025.06.30~07.06 · -2.4% · 주말 자산 $4,114,315</title></rect>
+<rect x="458.3" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.63)"><title>2025.07.07~07.13 · +12.6% · 주말 자산 $4,631,047</title></rect>
+<rect x="473.3" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.47)"><title>2025.07.14~07.20 · +8.6% · 주말 자산 $5,031,186</title></rect>
+<rect x="488.3" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.69)"><title>2025.07.21~07.27 · +14.0% · 주말 자산 $5,735,386</title></rect>
+<rect x="503.4" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.79)"><title>2025.07.28~08.03 · -16.2% · 주말 자산 $4,807,802</title></rect>
+<rect x="518.4" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.59)"><title>2025.08.04~08.10 · +11.4% · 주말 자산 $5,358,220</title></rect>
+<rect x="533.4" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.31)"><title>2025.08.11~08.17 · +4.8% · 주말 자산 $5,617,905</title></rect>
+<rect x="548.4" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2025.08.18~08.24 · +0.7% · 주말 자산 $5,654,715</title></rect>
+<rect x="563.4" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.15)"><title>2025.08.25~08.31 · +1.2% · 주말 자산 $5,724,887</title></rect>
+<rect x="578.5" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2025.09.01~09.07 · +0.8% · 주말 자산 $5,770,611</title></rect>
+<rect x="593.5" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.18)"><title>2025.09.08~09.14 · +1.9% · 주말 자산 $5,879,436</title></rect>
+<rect x="608.5" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.75)"><title>2025.09.15~09.21 · +15.4% · 주말 자산 $6,785,640</title></rect>
+<rect x="623.5" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.49)"><title>2025.09.22~09.28 · -9.3% · 주말 자산 $6,157,110</title></rect>
+<rect x="638.5" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.60)"><title>2025.09.29~10.05 · +11.8% · 주말 자산 $6,886,962</title></rect>
+<rect x="653.6" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.23)"><title>2025.10.06~10.12 · +3.0% · 주말 자산 $7,096,086</title></rect>
+<rect x="668.6" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.70)"><title>2025.10.13~10.19 · -14.0% · 주말 자산 $6,099,615</title></rect>
+<rect x="683.6" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.13)"><title>2025.10.20~10.26 · -0.6% · 주말 자산 $6,060,536</title></rect>
+<rect x="698.6" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.25)"><title>2025.10.27~11.02 · -3.5% · 주말 자산 $5,850,697</title></rect>
+<rect x="713.6" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.55)"><title>2025.11.03~11.09 · +10.6% · 주말 자산 $6,467,918</title></rect>
+<rect x="728.6" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.55)"><title>2025.11.10~11.16 · +10.5% · 주말 자산 $7,146,081</title></rect>
+<rect x="743.7" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.49)"><title>2025.11.17~11.23 · +9.1% · 주말 자산 $7,795,015</title></rect>
+<rect x="758.7" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.25)"><title>2025.11.24~11.30 · -3.5% · 주말 자산 $7,525,387</title></rect>
+<rect x="773.7" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.15)"><title>2025.12.01~12.07 · -1.3% · 주말 자산 $7,430,451</title></rect>
+<rect x="788.7" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.19)"><title>2025.12.08~12.14 · +2.0% · 주말 자산 $7,582,197</title></rect>
+<rect x="803.7" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.14)"><title>2025.12.15~12.21 · +1.0% · 주말 자산 $7,659,158</title></rect>
+<rect x="818.8" y="165.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.11)"><title>2025.12.22~12.28 · +0.2% · 주말 자산 $7,677,260</title></rect>
+<rect x="52.8" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.26)"><title>2025.12.29~01.04 · -3.8% · 주말 자산 $7,387,007</title></rect>
+<rect x="67.8" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.41)"><title>2026.01.05~01.11 · -7.3% · 주말 자산 $6,849,217</title></rect>
+<rect x="82.8" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.42)"><title>2026.01.12~01.18 · +7.6% · 주말 자산 $7,368,948</title></rect>
+<rect x="97.9" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.63)"><title>2026.01.19~01.25 · -12.5% · 주말 자산 $6,448,950</title></rect>
+<rect x="112.9" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2026.01.26~02.01 · +24.5% · 주말 자산 $8,028,102</title></rect>
+<rect x="127.9" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.85)"><title>2026.02.02~02.08 · +17.6% · 주말 자산 $9,437,798</title></rect>
+<rect x="142.9" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.24)"><title>2026.02.09~02.15 · +3.2% · 주말 자산 $9,741,293</title></rect>
+<rect x="157.9" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.16)"><title>2026.02.16~02.22 · +1.4% · 주말 자산 $9,882,072</title></rect>
+<rect x="173.0" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2026.02.23~03.01 · +1.7% · 주말 자산 $10,049,978</title></rect>
+<rect x="188.0" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.13)"><title>2026.03.02~03.08 · +0.7% · 주말 자산 $10,119,302</title></rect>
+<rect x="203.0" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.50)"><title>2026.03.09~03.15 · -9.3% · 주말 자산 $9,176,381</title></rect>
+<rect x="218.0" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.38)"><title>2026.03.16~03.22 · -6.6% · 주말 자산 $8,569,888</title></rect>
+<rect x="233.0" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.36)"><title>2026.03.23~03.29 · +6.2% · 주말 자산 $9,102,671</title></rect>
+<rect x="248.0" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.21)"><title>2026.03.30~04.05 · -2.6% · 주말 자산 $8,868,453</title></rect>
+<rect x="263.1" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.24)"><title>2026.04.06~04.12 · -3.3% · 주말 자산 $8,578,813</title></rect>
+<rect x="278.1" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.29)"><title>2026.04.13~04.19 · -4.4% · 주말 자산 $8,200,013</title></rect>
+<rect x="293.1" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.44)"><title>2026.04.20~04.26 · +7.9% · 주말 자산 $8,848,560</title></rect>
+<rect x="308.1" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.24)"><title>2026.04.27~05.03 · -3.4% · 주말 자산 $8,551,536</title></rect>
+<rect x="323.1" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.30)"><title>2026.05.04~05.10 · +4.8% · 주말 자산 $8,958,848</title></rect>
+<rect x="338.2" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.45)"><title>2026.05.11~05.17 · -8.2% · 주말 자산 $8,225,243</title></rect>
+<rect x="353.2" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.39)"><title>2026.05.18~05.24 · -6.9% · 주말 자산 $7,654,179</title></rect>
+<rect x="368.2" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.83)"><title>2026.05.25~05.31 · +17.1% · 주말 자산 $8,959,824</title></rect>
+<rect x="383.2" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.25)"><title>2026.06.01~06.07 · -3.6% · 주말 자산 $8,638,212</title></rect>
+<rect x="398.2" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.27)"><title>2026.06.08~06.14 · -4.0% · 주말 자산 $8,291,450</title></rect>
+<rect x="413.3" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.38)"><title>2026.06.15~06.21 · +6.5% · 주말 자산 $8,833,329</title></rect>
+<rect x="428.3" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.45)"><title>2026.06.22~06.28 · +8.2% · 주말 자산 $9,557,869</title></rect>
+<rect x="443.3" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.38)"><title>2026.06.29~07.05 · -6.6% · 주말 자산 $8,929,253</title></rect>
+<rect x="458.3" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.17)"><title>2026.07.06~07.12 · +1.6% · 주말 자산 $9,076,872</title></rect>
+<rect x="473.3" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.12)"><title>2026.07.13~07.19 · -0.5% · 주말 자산 $9,031,325</title></rect>
+<rect x="488.3" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2026.07.20~07.26 · +0.5% · 주말 자산 $9,078,157</title></rect>
+<rect x="503.4" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.37)"><title>2026.07.27~08.02 · -6.4% · 주말 자산 $8,499,317</title></rect>
+<rect x="518.4" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.12)"><title>2026.08.03~08.09 · +0.5% · 주말 자산 $8,538,504</title></rect>
+<rect x="533.4" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.14)"><title>2026.08.10~08.16 · -0.9% · 주말 자산 $8,463,976</title></rect>
+<rect x="548.4" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.95)"><title>2026.08.17~08.23 · +21.2% · 주말 자산 $10,256,655</title></rect>
+<rect x="563.4" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.25)"><title>2026.08.24~08.30 · -3.5% · 주말 자산 $9,901,644</title></rect>
+<rect x="578.5" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.75)"><title>2026.08.31~09.06 · +15.2% · 주말 자산 $11,406,122</title></rect>
+<rect x="593.5" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.45)"><title>2026.09.07~09.13 · -8.2% · 주말 자산 $10,475,320</title></rect>
+<rect x="608.5" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.65)"><title>2026.09.14~09.20 · +13.0% · 주말 자산 $11,840,891</title></rect>
+<rect x="623.5" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.22)"><title>2026.09.21~09.27 · +2.7% · 주말 자산 $12,165,317</title></rect>
+<rect x="638.5" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(31,122,85,0.24)"><title>2026.09.28~10.04 · +3.4% · 주말 자산 $12,575,104</title></rect>
+<rect x="653.6" y="185.5" width="13.4" height="17.0" rx="2" fill="rgba(177,67,47,0.44)"><title>2026.10.05~10.11 · -7.9% · 주말 자산 $11,583,540 · 36봉(부분)</title></rect>
+</svg></div></div>
+<div class="wklegend"><span class="sw" style="background:rgba(177,67,47,.95)"></span>−20% 이하 <span class="sw" style="background:rgba(177,67,47,.45)"></span>−8% <span class="sw" style="background:#e9ebf0"></span>0 <span class="sw" style="background:rgba(31,122,85,.45)"></span>+8% <span class="sw" style="background:rgba(31,122,85,.95)"></span>+20% 이상 · 칸에 마우스를 올리면 날짜와 수익률</div>
+<p class="cap">한 주 = 월요일 00:00 ~ 일요일 24:00 (UTC). 그 주 마지막 4시간봉 종가 자산 기준(비상금 포함, 보유 포지션 미실현 손익 포함). 458주 중 77주가 +10% 이상, 31주가 −10% 이하였습니다.</p></div>
+<div class="chart"><h4>주별 수익률 분포 — 5%p 구간별 주 수</h4>
+<svg viewBox="0 0 860 240" class="svg" role="img" aria-label="주별 수익률 분포">
+<line x1="44" y1="204.0" x2="844" y2="204.0" class="grid"/>
+<text x="38" y="208.0" class="ax" text-anchor="end">0</text>
+<line x1="44" y1="175.3" x2="844" y2="175.3" class="grid"/>
+<text x="38" y="179.3" class="ax" text-anchor="end">20</text>
+<line x1="44" y1="146.6" x2="844" y2="146.6" class="grid"/>
+<text x="38" y="150.6" class="ax" text-anchor="end">40</text>
+<line x1="44" y1="117.9" x2="844" y2="117.9" class="grid"/>
+<text x="38" y="121.9" class="ax" text-anchor="end">60</text>
+<line x1="44" y1="89.2" x2="844" y2="89.2" class="grid"/>
+<text x="38" y="93.2" class="ax" text-anchor="end">80</text>
+<line x1="44" y1="60.5" x2="844" y2="60.5" class="grid"/>
+<text x="38" y="64.5" class="ax" text-anchor="end">100</text>
+<line x1="44" y1="31.7" x2="844" y2="31.7" class="grid"/>
+<text x="38" y="35.7" class="ax" text-anchor="end">120</text>
+<text x="44.0" y="220" class="ax" text-anchor="middle">-50%</text>
+<rect x="118.2" y="202.6" width="33.4" height="1.4" class="tl" opacity="0.85"/>
+<text x="134.9" y="197.6" class="ax" text-anchor="middle" style="font-size:11px">1</text>
+<text x="116.7" y="220" class="ax" text-anchor="middle">-40%</text>
+<rect x="191.0" y="202.6" width="33.4" height="1.4" class="tl" opacity="0.85"/>
+<text x="207.6" y="197.6" class="ax" text-anchor="middle" style="font-size:11px">1</text>
+<text x="189.5" y="220" class="ax" text-anchor="middle">-30%</text>
+<rect x="263.7" y="192.5" width="33.4" height="11.5" class="tl" opacity="0.85"/>
+<text x="280.4" y="187.5" class="ax" text-anchor="middle" style="font-size:11px">8</text>
+<text x="262.2" y="220" class="ax" text-anchor="middle">-20%</text>
+<rect x="300.0" y="173.9" width="33.4" height="30.1" class="tl" opacity="0.85"/>
+<text x="316.7" y="168.9" class="ax" text-anchor="middle" style="font-size:11px">21</text>
+<rect x="336.4" y="129.4" width="33.4" height="74.6" class="tl" opacity="0.85"/>
+<text x="353.1" y="124.4" class="ax" text-anchor="middle" style="font-size:11px">52</text>
+<text x="334.9" y="220" class="ax" text-anchor="middle">-10%</text>
+<rect x="372.8" y="26.0" width="33.4" height="178.0" class="tl" opacity="0.85"/>
+<text x="389.5" y="21.0" class="ax" text-anchor="middle" style="font-size:11px">124</text>
+<rect x="409.1" y="33.2" width="33.4" height="170.8" class="tw" opacity="0.85"/>
+<text x="425.8" y="28.2" class="ax" text-anchor="middle" style="font-size:11px">119</text>
+<text x="407.6" y="220" class="ax" text-anchor="middle">+0%</text>
+<rect x="445.5" y="125.0" width="33.4" height="79.0" class="tw" opacity="0.85"/>
+<text x="462.2" y="120.0" class="ax" text-anchor="middle" style="font-size:11px">55</text>
+<rect x="481.9" y="148.0" width="33.4" height="56.0" class="tw" opacity="0.85"/>
+<text x="498.5" y="143.0" class="ax" text-anchor="middle" style="font-size:11px">39</text>
+<text x="480.4" y="220" class="ax" text-anchor="middle">+10%</text>
+<rect x="518.2" y="183.9" width="33.4" height="20.1" class="tw" opacity="0.85"/>
+<text x="534.9" y="178.9" class="ax" text-anchor="middle" style="font-size:11px">14</text>
+<rect x="554.6" y="188.2" width="33.4" height="15.8" class="tw" opacity="0.85"/>
+<text x="571.3" y="183.2" class="ax" text-anchor="middle" style="font-size:11px">11</text>
+<text x="553.1" y="220" class="ax" text-anchor="middle">+20%</text>
+<rect x="591.0" y="196.8" width="33.4" height="7.2" class="tw" opacity="0.85"/>
+<text x="607.6" y="191.8" class="ax" text-anchor="middle" style="font-size:11px">5</text>
+<rect x="627.3" y="199.7" width="33.4" height="4.3" class="tw" opacity="0.85"/>
+<text x="644.0" y="194.7" class="ax" text-anchor="middle" style="font-size:11px">3</text>
+<text x="625.8" y="220" class="ax" text-anchor="middle">+30%</text>
+<rect x="700.0" y="202.6" width="33.4" height="1.4" class="tw" opacity="0.85"/>
+<text x="716.7" y="197.6" class="ax" text-anchor="middle" style="font-size:11px">1</text>
+<text x="698.5" y="220" class="ax" text-anchor="middle">+40%</text>
+<rect x="736.4" y="202.6" width="33.4" height="1.4" class="tw" opacity="0.85"/>
+<text x="753.1" y="197.6" class="ax" text-anchor="middle" style="font-size:11px">1</text>
+<rect x="772.8" y="202.6" width="33.4" height="1.4" class="tw" opacity="0.85"/>
+<text x="789.5" y="197.6" class="ax" text-anchor="middle" style="font-size:11px">1</text>
+<text x="771.3" y="220" class="ax" text-anchor="middle">+50%</text>
+<rect x="809.1" y="201.1" width="33.4" height="2.9" class="tw" opacity="0.85"/>
+<text x="825.8" y="196.1" class="ax" text-anchor="middle" style="font-size:11px">2</text>
+<text x="844.0" y="220" class="ax" text-anchor="middle">+60%</text>
+<line x1="407.6" y1="26" x2="407.6" y2="204.0" class="grid zero"/>
+</svg>
+<p class="cap">가운데(−5%~+5%)에 243주가 몰려 있고, 양쪽 꼬리가 깁니다: +20% 넘는 주 24번, −20% 밑인 주 2번. 평균 +2.3% · 표준편차 11.1%p. "평균적인 한 주"는 거의 없고, 몇 안 되는 큰 주가 결과를 만듭니다.</p></div>
+
+</div></section>
+
+<!-- TRUTH -->
+<section class="alt" id="truth"><div class="wrap">
+<div class="eyebrow">Drawdown · Trades</div>
+<h2>낙폭과 188번의 거래 — 숫자 그대로</h2>
+<div class="open" style="margin:14px 0 22px;font-size:17px;font-weight:700">원금 손실의 위험이 있습니다. 여윳돈으로 투자하세요. 중장기 투자가 빛을 봅니다.</div>
+<div class="chart"><h4>고점 대비 낙폭 (월말 기준, 전체 자산)</h4>
+<svg viewBox="0 0 860 220" class="svg" role="img" aria-label="고점 대비 낙폭">
+<line x1="64" y1="14.0" x2="836" y2="14.0" class="grid"/>
+<text x="56" y="18.0" class="ax" text-anchor="end">0%</text>
+<line x1="64" y1="55.5" x2="836" y2="55.5" class="grid"/>
+<text x="56" y="59.5" class="ax" text-anchor="end">-20%</text>
+<line x1="64" y1="97.0" x2="836" y2="97.0" class="grid"/>
+<text x="56" y="101.0" class="ax" text-anchor="end">-40%</text>
+<line x1="64" y1="138.5" x2="836" y2="138.5" class="grid"/>
+<text x="56" y="142.5" class="ax" text-anchor="end">-60%</text>
+<line x1="64" y1="180.0" x2="836" y2="180.0" class="grid"/>
+<text x="56" y="184.0" class="ax" text-anchor="end">-80%</text>
+<text x="71.3" y="198" class="ax" text-anchor="middle">2018</text>
+<text x="158.7" y="198" class="ax" text-anchor="middle">2019</text>
+<text x="246.1" y="198" class="ax" text-anchor="middle">2020</text>
+<text x="333.5" y="198" class="ax" text-anchor="middle">2021</text>
+<text x="420.9" y="198" class="ax" text-anchor="middle">2022</text>
+<text x="508.3" y="198" class="ax" text-anchor="middle">2023</text>
+<text x="595.7" y="198" class="ax" text-anchor="middle">2024</text>
+<text x="683.1" y="198" class="ax" text-anchor="middle">2025</text>
+<text x="770.5" y="198" class="ax" text-anchor="middle">2026</text>
+<polygon points="64.0,14.0 64.0,14.0 71.3,85.2 78.6,86.3 85.8,100.0 93.1,88.3 100.4,116.1 107.7,108.4 115.0,116.4 122.3,126.5 129.5,130.3 136.8,153.3 144.1,97.4 151.4,97.6 158.7,91.8 166.0,54.6 173.2,14.0 180.5,26.8 187.8,22.4 195.1,56.7 202.4,53.3 209.7,49.2 216.9,22.7 224.2,42.3 231.5,35.5 238.8,28.9 246.1,19.4 253.4,70.3 260.6,45.4 267.9,59.7 275.2,49.9 282.5,50.9 289.8,14.0 297.1,29.6 304.3,34.8 311.6,25.1 318.9,14.4 326.2,16.3 333.5,42.9 340.8,87.7 348.0,33.4 355.3,18.5 362.6,61.5 369.9,50.8 377.2,49.2 384.5,27.3 391.7,43.0 399.0,32.5 406.3,30.4 413.6,16.0 420.9,24.4 428.2,57.6 435.4,53.0 442.7,75.5 450.0,44.6 457.3,24.5 464.6,45.3 471.8,52.4 479.1,61.1 486.4,72.0 493.7,134.9 501.0,132.6 508.3,100.0 515.5,101.5 522.8,121.8 530.1,124.8 537.4,129.2 544.7,112.8 552.0,116.8 559.2,93.8 566.5,95.5 573.8,50.9 581.1,41.1 588.4,26.9 595.7,45.5 602.9,23.2 610.2,22.2 617.5,39.0 624.8,48.0 632.1,40.7 639.4,58.5 646.6,95.5 653.9,98.3 661.2,87.6 668.5,60.7 675.8,57.8 683.1,74.3 690.3,72.7 697.6,83.0 704.9,71.5 712.2,48.2 719.5,77.1 726.8,43.5 734.0,22.4 741.3,38.2 748.6,60.5 755.9,28.9 763.2,25.5 770.5,24.1 777.7,23.9 785.0,48.4 792.3,56.3 799.6,43.7 806.9,28.5 814.2,50.8 821.4,25.6 828.7,27.1 836.0,32.7 836.0,14.0" class="areaDD"/>
+<polyline points="64.0,14.0 71.3,85.2 78.6,86.3 85.8,100.0 93.1,88.3 100.4,116.1 107.7,108.4 115.0,116.4 122.3,126.5 129.5,130.3 136.8,153.3 144.1,97.4 151.4,97.6 158.7,91.8 166.0,54.6 173.2,14.0 180.5,26.8 187.8,22.4 195.1,56.7 202.4,53.3 209.7,49.2 216.9,22.7 224.2,42.3 231.5,35.5 238.8,28.9 246.1,19.4 253.4,70.3 260.6,45.4 267.9,59.7 275.2,49.9 282.5,50.9 289.8,14.0 297.1,29.6 304.3,34.8 311.6,25.1 318.9,14.4 326.2,16.3 333.5,42.9 340.8,87.7 348.0,33.4 355.3,18.5 362.6,61.5 369.9,50.8 377.2,49.2 384.5,27.3 391.7,43.0 399.0,32.5 406.3,30.4 413.6,16.0 420.9,24.4 428.2,57.6 435.4,53.0 442.7,75.5 450.0,44.6 457.3,24.5 464.6,45.3 471.8,52.4 479.1,61.1 486.4,72.0 493.7,134.9 501.0,132.6 508.3,100.0 515.5,101.5 522.8,121.8 530.1,124.8 537.4,129.2 544.7,112.8 552.0,116.8 559.2,93.8 566.5,95.5 573.8,50.9 581.1,41.1 588.4,26.9 595.7,45.5 602.9,23.2 610.2,22.2 617.5,39.0 624.8,48.0 632.1,40.7 639.4,58.5 646.6,95.5 653.9,98.3 661.2,87.6 668.5,60.7 675.8,57.8 683.1,74.3 690.3,72.7 697.6,83.0 704.9,71.5 712.2,48.2 719.5,77.1 726.8,43.5 734.0,22.4 741.3,38.2 748.6,60.5 755.9,28.9 763.2,25.5 770.5,24.1 777.7,23.9 785.0,48.4 792.3,56.3 799.6,43.7 806.9,28.5 814.2,50.8 821.4,25.6 828.7,27.1 836.0,32.7" class="lineDD"/>
+<circle cx="136.8" cy="153.3" r="4" class="dotT"/>
+<text x="136.8" y="171.3" class="labT" text-anchor="start">2018.01→2018.10 −71.4%</text>
+<circle cx="493.7" cy="134.9" r="4" class="dotT"/>
+<text x="493.7" y="152.9" class="labT" text-anchor="middle">2022.06→2023.01 −63.3%</text>
+<circle cx="653.9" cy="98.3" r="4" class="dotT"/>
+<text x="653.9" y="116.3" class="labT" text-anchor="middle">2024.07→2024.10 −45.0%</text>
+</svg>
+<p class="cap">0%가 "역대 최고 자산"입니다. 선이 아래로 갈수록 고점에서 그만큼 빠져 있는 상태. 8.9년 중 28%의 시간은 고점 대비 −30% 아래였습니다 — 그래서 "참을 수 있는 돈"으로만 하셔야 합니다.</p></div>
+<table style="margin-top:18px"><thead><tr><th>낙폭 구간 (30% 이상 전부)</th><th>깊이</th><th>고점 → 바닥</th><th>바닥 → 회복</th><th>물밑 총 기간</th></tr></thead><tbody>
+<tr><td>2018.01 → 2018.10</td><td class="num neg"><b>−71.4%</b></td><td class="num">9.1개월</td><td class="num">4.7개월</td><td class="num">13.8개월</td></tr>
+<tr><td>2022.06 → 2023.01</td><td class="num neg"><b>−63.3%</b></td><td class="num">6.7개월</td><td class="num">10.2개월</td><td class="num">16.9개월</td></tr>
+<tr><td>2024.07 → 2024.10</td><td class="num neg"><b>−45.0%</b></td><td class="num">2.9개월</td><td class="num">11.4개월</td><td class="num">14.3개월</td></tr>
+<tr><td>2021.02 → 2021.02</td><td class="num neg"><b>−39.2%</b></td><td class="num">0.3개월</td><td class="num">1.2개월</td><td class="num">1.5개월</td></tr>
+<tr><td>2022.01 → 2022.04</td><td class="num neg"><b>−37.4%</b></td><td class="num">2.9개월</td><td class="num">1.7개월</td><td class="num">4.6개월</td></tr>
+<tr><td>2020.03 → 2020.04</td><td class="num neg"><b>−35.6%</b></td><td class="num">1.2개월</td><td class="num">3.3개월</td><td class="num">4.5개월</td></tr>
+<tr><td>2020.02 → 2020.03</td><td class="num neg"><b>−34.7%</b></td><td class="num">0.7개월</td><td class="num">0.2개월</td><td class="num">0.9개월</td></tr>
+<tr><td>2019.06 → 2019.08</td><td class="num neg"><b>−33.3%</b></td><td class="num">1.8개월</td><td class="num">2.1개월</td><td class="num">3.9개월</td></tr>
+<tr><td>2021.05 → 2021.06</td><td class="num neg"><b>−30.3%</b></td><td class="num">0.8개월</td><td class="num">2.6개월</td><td class="num">3.4개월</td></tr>
+</tbody></table>
+<p class="note">전체 자산(봇 + 비상금) 4시간봉 기준. 고점 대비 −30% 아래였던 시간 27.8%, −50% 아래 8.0%. 가장 긴 물밑은 2022.06부터 16.9개월.</p>
+<div class="qa"><div class="q">"그런데 왜 승률 37%로 3,319배가 되나요?"</div><div class="a">질 때는 작게(평균 -9.9%), 이길 때는 추세 끝까지 따라가서 크게(평균 +91%) 이기기 때문입니다. 손익비 9.2배. 10번 중 4번만 이겨도 한 번 이길 때 9배를 가져오면 계좌는 불어납니다. 아래 두 줄의 막대가 그 모양입니다.</div></div>
+<div class="chart" style="margin-top:22px"><h4>BTC 라온1 — 95번의 거래 손익 (계좌 대비 %, 시간순)</h4>
+<svg viewBox="0 0 860 260" class="svg" role="img" aria-label="BTC 거래별 손익">
+<line x1="56" y1="42.2" x2="844" y2="42.2" class="grid"/>
+<text x="48" y="46.2" class="ax" text-anchor="end">+400%</text>
+<line x1="56" y1="83.0" x2="844" y2="83.0" class="grid"/>
+<text x="48" y="87.0" class="ax" text-anchor="end">+300%</text>
+<line x1="56" y1="123.8" x2="844" y2="123.8" class="grid"/>
+<text x="48" y="127.8" class="ax" text-anchor="end">+200%</text>
+<line x1="56" y1="164.7" x2="844" y2="164.7" class="grid"/>
+<text x="48" y="168.7" class="ax" text-anchor="end">+100%</text>
+<line x1="56" y1="205.5" x2="844" y2="205.5" class="grid zero"/>
+<text x="48" y="209.5" class="ax" text-anchor="end">+0%</text>
+<line x1="56" y1="225.9" x2="844" y2="225.9" class="grid"/>
+<text x="48" y="229.9" class="ax" text-anchor="end">-50%</text>
+<rect x="57.2" y="205.5" width="5.8" height="3.2" class="tl"/>
+<rect x="65.5" y="197.1" width="5.8" height="8.4" class="tw"/>
+<rect x="73.8" y="205.5" width="5.8" height="2.6" class="tl"/>
+<rect x="82.1" y="205.5" width="5.8" height="3.2" class="tl"/>
+<rect x="90.4" y="205.5" width="5.8" height="7.6" class="tl"/>
+<rect x="98.7" y="203.2" width="5.8" height="2.3" class="tw"/>
+<rect x="107.0" y="205.5" width="5.8" height="1.0" class="tl"/>
+<rect x="115.3" y="199.5" width="5.8" height="6.0" class="tw"/>
+<rect x="123.6" y="205.5" width="5.8" height="4.7" class="tl"/>
+<rect x="131.9" y="205.5" width="5.8" height="2.5" class="tl"/>
+<rect x="140.2" y="205.5" width="5.8" height="6.2" class="tl"/>
+<rect x="148.5" y="205.5" width="5.8" height="2.5" class="tl"/>
+<rect x="156.8" y="205.5" width="5.8" height="6.8" class="tl"/>
+<rect x="165.1" y="205.5" width="5.8" height="7.1" class="tl"/>
+<rect x="173.4" y="205.5" width="5.8" height="1.9" class="tl"/>
+<rect x="181.7" y="147.6" width="5.8" height="57.9" class="tw"/>
+<rect x="190.0" y="54.7" width="5.8" height="150.8" class="tw"/>
+<rect x="198.3" y="205.5" width="5.8" height="2.8" class="tl"/>
+<rect x="206.5" y="205.5" width="5.8" height="4.5" class="tl"/>
+<rect x="214.8" y="205.5" width="5.8" height="1.0" class="tl"/>
+<rect x="223.1" y="205.5" width="5.8" height="1.0" class="tl"/>
+<rect x="231.4" y="199.0" width="5.8" height="6.5" class="tw"/>
+<rect x="239.7" y="205.5" width="5.8" height="3.8" class="tl"/>
+<rect x="248.0" y="196.0" width="5.8" height="9.5" class="tw"/>
+<rect x="256.3" y="199.8" width="5.8" height="5.7" class="tw"/>
+<rect x="264.6" y="194.4" width="5.8" height="11.1" class="tw"/>
+<rect x="272.9" y="205.5" width="5.8" height="3.5" class="tl"/>
+<rect x="281.2" y="205.5" width="5.8" height="2.9" class="tl"/>
+<rect x="289.5" y="189.9" width="5.8" height="15.6" class="tw"/>
+<rect x="297.8" y="205.5" width="5.8" height="4.0" class="tl"/>
+<rect x="306.1" y="195.2" width="5.8" height="10.3" class="tw"/>
+<rect x="314.4" y="205.5" width="5.8" height="2.2" class="tl"/>
+<rect x="322.7" y="34.0" width="5.8" height="171.5" class="tw"/>
+<text x="325.6" y="25" class="barlab" text-anchor="middle">+1,038% ↑</text>
+<rect x="331.0" y="205.5" width="5.8" height="2.1" class="tl"/>
+<rect x="339.3" y="205.5" width="5.8" height="5.2" class="tl"/>
+<rect x="347.6" y="195.7" width="5.8" height="9.8" class="tw"/>
+<rect x="355.9" y="201.6" width="5.8" height="3.9" class="tw"/>
+<rect x="364.1" y="205.5" width="5.8" height="8.4" class="tl"/>
+<rect x="372.4" y="198.6" width="5.8" height="6.9" class="tw"/>
+<rect x="380.7" y="188.6" width="5.8" height="16.9" class="tw"/>
+<rect x="389.0" y="205.5" width="5.8" height="5.8" class="tl"/>
+<rect x="397.3" y="205.5" width="5.8" height="8.6" class="tl"/>
+<rect x="405.6" y="205.5" width="5.8" height="3.7" class="tl"/>
+<rect x="413.9" y="205.5" width="5.8" height="2.7" class="tl"/>
+<rect x="422.2" y="205.5" width="5.8" height="3.4" class="tl"/>
+<rect x="430.5" y="174.0" width="5.8" height="31.5" class="tw"/>
+<rect x="438.8" y="205.5" width="5.8" height="4.2" class="tl"/>
+<rect x="447.1" y="205.5" width="5.8" height="4.6" class="tl"/>
+<rect x="455.4" y="205.5" width="5.8" height="4.4" class="tl"/>
+<rect x="463.7" y="201.9" width="5.8" height="3.6" class="tw"/>
+<rect x="472.0" y="205.5" width="5.8" height="19.2" class="tl"/>
+<rect x="480.3" y="205.5" width="5.8" height="2.1" class="tl"/>
+<rect x="488.6" y="205.5" width="5.8" height="4.9" class="tl"/>
+<rect x="496.9" y="205.5" width="5.8" height="1.4" class="tl"/>
+<rect x="505.2" y="170.0" width="5.8" height="35.5" class="tw"/>
+<rect x="513.5" y="205.5" width="5.8" height="8.8" class="tl"/>
+<rect x="521.7" y="201.6" width="5.8" height="3.9" class="tw"/>
+<rect x="530.0" y="205.5" width="5.8" height="3.0" class="tl"/>
+<rect x="538.3" y="205.5" width="5.8" height="1.0" class="tl"/>
+<rect x="546.6" y="192.2" width="5.8" height="13.3" class="tw"/>
+<rect x="554.9" y="145.7" width="5.8" height="59.8" class="tw"/>
+<rect x="563.2" y="205.5" width="5.8" height="2.7" class="tl"/>
+<rect x="571.5" y="166.8" width="5.8" height="38.7" class="tw"/>
+<rect x="579.8" y="205.5" width="5.8" height="2.7" class="tl"/>
+<rect x="588.1" y="205.5" width="5.8" height="2.3" class="tl"/>
+<rect x="596.4" y="202.3" width="5.8" height="3.2" class="tw"/>
+<rect x="604.7" y="205.5" width="5.8" height="6.6" class="tl"/>
+<rect x="613.0" y="205.5" width="5.8" height="4.7" class="tl"/>
+<rect x="621.3" y="205.5" width="5.8" height="4.4" class="tl"/>
+<rect x="629.6" y="205.5" width="5.8" height="1.1" class="tl"/>
+<rect x="637.9" y="173.5" width="5.8" height="32.0" class="tw"/>
+<rect x="646.2" y="205.5" width="5.8" height="3.2" class="tl"/>
+<rect x="654.5" y="205.5" width="5.8" height="3.1" class="tl"/>
+<rect x="662.8" y="205.5" width="5.8" height="4.3" class="tl"/>
+<rect x="671.1" y="205.5" width="5.8" height="1.8" class="tl"/>
+<rect x="679.3" y="196.8" width="5.8" height="8.7" class="tw"/>
+<rect x="687.6" y="185.2" width="5.8" height="20.3" class="tw"/>
+<rect x="695.9" y="205.5" width="5.8" height="5.2" class="tl"/>
+<rect x="704.2" y="204.0" width="5.8" height="1.5" class="tw"/>
+<rect x="712.5" y="205.5" width="5.8" height="1.2" class="tl"/>
+<rect x="720.8" y="205.5" width="5.8" height="4.8" class="tl"/>
+<rect x="729.1" y="205.5" width="5.8" height="8.1" class="tl"/>
+<rect x="737.4" y="205.5" width="5.8" height="6.0" class="tl"/>
+<rect x="745.7" y="194.3" width="5.8" height="11.2" class="tw"/>
+<rect x="754.0" y="205.5" width="5.8" height="5.1" class="tl"/>
+<rect x="762.3" y="184.6" width="5.8" height="20.9" class="tw"/>
+<rect x="770.6" y="205.5" width="5.8" height="5.4" class="tl"/>
+<rect x="778.9" y="205.5" width="5.8" height="2.9" class="tl"/>
+<rect x="787.2" y="204.7" width="5.8" height="1.0" class="tw"/>
+<rect x="795.5" y="186.3" width="5.8" height="19.2" class="tw"/>
+<rect x="803.8" y="205.5" width="5.8" height="3.8" class="tl"/>
+<rect x="812.1" y="205.5" width="5.8" height="3.8" class="tl"/>
+<rect x="820.4" y="205.5" width="5.8" height="2.6" class="tl"/>
+<rect x="828.7" y="205.5" width="5.8" height="9.1" class="tl"/>
+<rect x="836.9" y="189.8" width="5.8" height="15.7" class="tw"/>
+<text x="56.0" y="248" class="ax" text-anchor="start">2018</text>
+<text x="188.7" y="248" class="ax" text-anchor="start">2019</text>
+<text x="255.1" y="248" class="ax" text-anchor="start">2020</text>
+<text x="329.7" y="248" class="ax" text-anchor="start">2021</text>
+<text x="387.8" y="248" class="ax" text-anchor="start">2022</text>
+<text x="503.9" y="248" class="ax" text-anchor="start">2023</text>
+<text x="562.0" y="248" class="ax" text-anchor="start">2024</text>
+<text x="653.2" y="248" class="ax" text-anchor="start">2025</text>
+<text x="752.8" y="248" class="ax" text-anchor="start">2026</text>
+</svg>
+<p class="cap">빨간 막대(손실)가 더 많지만 짧고, 초록 막대(수익)는 드물지만 깁니다. 가장 큰 거래는 2020–21 상승장 롱 +1,038% (194일 보유). 최대 7연패. 마지막 막대는 2026.10.10 기준 보유 포지션을 그 시점 가격으로 정리했다고 가정한 값.</p></div>
+<div class="chart"><h4>BNB 라온1 — 93번의 거래 손익 (계좌 대비 %, 시간순)</h4>
+<svg viewBox="0 0 860 260" class="svg" role="img" aria-label="BNB 거래별 손익">
+<line x1="56" y1="42.2" x2="844" y2="42.2" class="grid"/>
+<text x="48" y="46.2" class="ax" text-anchor="end">+400%</text>
+<line x1="56" y1="83.0" x2="844" y2="83.0" class="grid"/>
+<text x="48" y="87.0" class="ax" text-anchor="end">+300%</text>
+<line x1="56" y1="123.8" x2="844" y2="123.8" class="grid"/>
+<text x="48" y="127.8" class="ax" text-anchor="end">+200%</text>
+<line x1="56" y1="164.7" x2="844" y2="164.7" class="grid"/>
+<text x="48" y="168.7" class="ax" text-anchor="end">+100%</text>
+<line x1="56" y1="205.5" x2="844" y2="205.5" class="grid zero"/>
+<text x="48" y="209.5" class="ax" text-anchor="end">+0%</text>
+<line x1="56" y1="225.9" x2="844" y2="225.9" class="grid"/>
+<text x="48" y="229.9" class="ax" text-anchor="end">-50%</text>
+<rect x="57.3" y="196.5" width="5.9" height="9.0" class="tw"/>
+<rect x="65.7" y="205.5" width="5.9" height="1.5" class="tl"/>
+<rect x="74.2" y="203.7" width="5.9" height="1.8" class="tw"/>
+<rect x="82.7" y="205.5" width="5.9" height="7.9" class="tl"/>
+<rect x="91.2" y="205.5" width="5.9" height="6.0" class="tl"/>
+<rect x="99.6" y="205.5" width="5.9" height="3.9" class="tl"/>
+<rect x="108.1" y="204.9" width="5.9" height="1.0" class="tw"/>
+<rect x="116.6" y="204.0" width="5.9" height="1.5" class="tw"/>
+<rect x="125.1" y="205.5" width="5.9" height="3.0" class="tl"/>
+<rect x="133.5" y="205.5" width="5.9" height="2.4" class="tl"/>
+<rect x="142.0" y="205.5" width="5.9" height="4.2" class="tl"/>
+<rect x="150.5" y="199.5" width="5.9" height="6.0" class="tw"/>
+<rect x="158.9" y="205.5" width="5.9" height="8.4" class="tl"/>
+<rect x="167.4" y="178.9" width="5.9" height="26.6" class="tw"/>
+<rect x="175.9" y="43.3" width="5.9" height="162.2" class="tw"/>
+<rect x="184.4" y="205.5" width="5.9" height="1.0" class="tl"/>
+<rect x="192.8" y="205.5" width="5.9" height="1.5" class="tl"/>
+<rect x="201.3" y="202.5" width="5.9" height="3.0" class="tw"/>
+<rect x="209.8" y="205.5" width="5.9" height="3.0" class="tl"/>
+<rect x="218.3" y="188.4" width="5.9" height="17.1" class="tw"/>
+<rect x="226.7" y="205.5" width="5.9" height="3.1" class="tl"/>
+<rect x="235.2" y="194.2" width="5.9" height="11.3" class="tw"/>
+<rect x="243.7" y="193.0" width="5.9" height="12.5" class="tw"/>
+<rect x="252.2" y="195.8" width="5.9" height="9.7" class="tw"/>
+<rect x="260.6" y="205.5" width="5.9" height="3.7" class="tl"/>
+<rect x="269.1" y="205.5" width="5.9" height="3.2" class="tl"/>
+<rect x="277.6" y="202.2" width="5.9" height="3.3" class="tw"/>
+<rect x="286.0" y="205.5" width="5.9" height="4.5" class="tl"/>
+<rect x="294.5" y="169.0" width="5.9" height="36.5" class="tw"/>
+<rect x="303.0" y="205.5" width="5.9" height="6.0" class="tl"/>
+<rect x="311.5" y="205.5" width="5.9" height="7.6" class="tl"/>
+<rect x="319.9" y="205.5" width="5.9" height="7.6" class="tl"/>
+<rect x="328.4" y="34.0" width="5.9" height="171.5" class="tw"/>
+<text x="331.4" y="25" class="barlab" text-anchor="middle">+1,972% ↑</text>
+<rect x="336.9" y="199.5" width="5.9" height="6.0" class="tw"/>
+<rect x="345.4" y="196.7" width="5.9" height="8.8" class="tw"/>
+<rect x="353.8" y="205.5" width="5.9" height="1.0" class="tl"/>
+<rect x="362.3" y="196.9" width="5.9" height="8.6" class="tw"/>
+<rect x="370.8" y="195.5" width="5.9" height="10.0" class="tw"/>
+<rect x="379.2" y="205.5" width="5.9" height="1.3" class="tl"/>
+<rect x="387.7" y="205.5" width="5.9" height="4.1" class="tl"/>
+<rect x="396.2" y="205.5" width="5.9" height="2.9" class="tl"/>
+<rect x="404.7" y="177.7" width="5.9" height="27.8" class="tw"/>
+<rect x="413.1" y="202.9" width="5.9" height="2.6" class="tw"/>
+<rect x="421.6" y="205.5" width="5.9" height="3.1" class="tl"/>
+<rect x="430.1" y="205.5" width="5.9" height="3.0" class="tl"/>
+<rect x="438.6" y="205.5" width="5.9" height="1.0" class="tl"/>
+<rect x="447.0" y="205.5" width="5.9" height="4.0" class="tl"/>
+<rect x="455.5" y="205.5" width="5.9" height="7.1" class="tl"/>
+<rect x="464.0" y="205.5" width="5.9" height="7.5" class="tl"/>
+<rect x="472.5" y="205.5" width="5.9" height="5.8" class="tl"/>
+<rect x="480.9" y="205.5" width="5.9" height="4.9" class="tl"/>
+<rect x="489.4" y="205.0" width="5.9" height="1.0" class="tw"/>
+<rect x="497.9" y="199.1" width="5.9" height="6.4" class="tw"/>
+<rect x="506.3" y="205.5" width="5.9" height="7.6" class="tl"/>
+<rect x="514.8" y="205.5" width="5.9" height="1.8" class="tl"/>
+<rect x="523.3" y="205.5" width="5.9" height="6.1" class="tl"/>
+<rect x="531.8" y="205.5" width="5.9" height="3.6" class="tl"/>
+<rect x="540.2" y="171.5" width="5.9" height="34.0" class="tw"/>
+<rect x="548.7" y="205.5" width="5.9" height="1.0" class="tl"/>
+<rect x="557.2" y="205.5" width="5.9" height="2.5" class="tl"/>
+<rect x="565.7" y="70.7" width="5.9" height="134.8" class="tw"/>
+<rect x="574.1" y="204.0" width="5.9" height="1.5" class="tw"/>
+<rect x="582.6" y="205.5" width="5.9" height="6.7" class="tl"/>
+<rect x="591.1" y="205.5" width="5.9" height="1.4" class="tl"/>
+<rect x="599.6" y="205.5" width="5.9" height="2.8" class="tl"/>
+<rect x="608.0" y="205.5" width="5.9" height="1.5" class="tl"/>
+<rect x="616.5" y="205.5" width="5.9" height="1.0" class="tl"/>
+<rect x="625.0" y="205.5" width="5.9" height="9.0" class="tl"/>
+<rect x="633.4" y="193.4" width="5.9" height="12.1" class="tw"/>
+<rect x="641.9" y="204.2" width="5.9" height="1.3" class="tw"/>
+<rect x="650.4" y="205.5" width="5.9" height="1.6" class="tl"/>
+<rect x="658.9" y="205.5" width="5.9" height="1.9" class="tl"/>
+<rect x="667.3" y="205.5" width="5.9" height="3.8" class="tl"/>
+<rect x="675.8" y="204.4" width="5.9" height="1.1" class="tw"/>
+<rect x="684.3" y="205.5" width="5.9" height="3.6" class="tl"/>
+<rect x="692.8" y="205.5" width="5.9" height="1.1" class="tl"/>
+<rect x="701.2" y="205.5" width="5.9" height="6.0" class="tl"/>
+<rect x="709.7" y="205.5" width="5.9" height="2.1" class="tl"/>
+<rect x="718.2" y="201.6" width="5.9" height="3.9" class="tw"/>
+<rect x="726.6" y="205.5" width="5.9" height="1.6" class="tl"/>
+<rect x="735.1" y="205.5" width="5.9" height="1.3" class="tl"/>
+<rect x="743.6" y="205.5" width="5.9" height="2.2" class="tl"/>
+<rect x="752.1" y="134.8" width="5.9" height="70.7" class="tw"/>
+<rect x="760.5" y="194.7" width="5.9" height="10.8" class="tw"/>
+<rect x="769.0" y="205.5" width="5.9" height="7.0" class="tl"/>
+<rect x="777.5" y="183.7" width="5.9" height="21.8" class="tw"/>
+<rect x="786.0" y="205.5" width="5.9" height="4.1" class="tl"/>
+<rect x="794.4" y="201.8" width="5.9" height="3.7" class="tw"/>
+<rect x="802.9" y="205.5" width="5.9" height="2.5" class="tl"/>
+<rect x="811.4" y="205.5" width="5.9" height="3.2" class="tl"/>
+<rect x="819.9" y="205.5" width="5.9" height="9.7" class="tl"/>
+<rect x="828.3" y="203.4" width="5.9" height="2.1" class="tw"/>
+<rect x="836.8" y="174.2" width="5.9" height="31.3" class="tw"/>
+<text x="56.0" y="248" class="ax" text-anchor="start">2018</text>
+<text x="174.6" y="248" class="ax" text-anchor="start">2019</text>
+<text x="242.4" y="248" class="ax" text-anchor="start">2020</text>
+<text x="335.6" y="248" class="ax" text-anchor="start">2021</text>
+<text x="378.0" y="248" class="ax" text-anchor="start">2022</text>
+<text x="496.6" y="248" class="ax" text-anchor="start">2023</text>
+<text x="572.9" y="248" class="ax" text-anchor="start">2024</text>
+<text x="640.6" y="248" class="ax" text-anchor="start">2025</text>
+<text x="767.7" y="248" class="ax" text-anchor="start">2026</text>
+</svg>
+<p class="cap">같은 규칙, 다른 시장. 가장 큰 거래는 2020–21 롱 +1,972% (154일 보유). 최대 8연패. 거래당 손익은 진입 직전 잔고 대비, 수수료·펀딩 전부 포함.</p></div>
+<div class="oos"><b>숨기지 않는 두 가지</b> — ① 이 규칙과 비중은 <b>2026.05.22</b>까지의 비트코인 데이터로 정해졌고, BNB는 <b>2026.10.12</b>에 미리 정한 코인 5개(ETH·BNB·XRP·SOL·DOGE) 중 같은 규칙을 돌려 ETH·XRP가 탈락한 뒤 <b>결과를 보고 남긴 코인</b>입니다. 좋은 숫자가 나온 코인을 고른 만큼 위 배수에는 선택의 덕이 섞여 있습니다. ② 수익은 몇 번의 거래에 몰려 있습니다 — 두 봇 188거래 중 상위 5개가 전체 이익의 약 65%. 그래서 아래 "기대치" 표의 2022년 이후 숫자(두 봇 합산 수익성지수 2.28)를 기준으로 보시길 권합니다.</div>
+</div></section>
+
+<!-- YEARLY -->
+<section><div class="wrap">
+<div class="eyebrow">Year by year</div>
+<h2>연도별 — 좋은 해와 나쁜 해</h2>
+<p class="sub">9개 연도 중 8개 플러스, 1개 마이너스. 두 코인의 좋은 해가 달라서(BNB는 2019·2021·2025, BTC는 2020·2023) 합치면 마이너스 해가 줄지만, 2022년처럼 둘이 같이 떨어지는 해는 비상금이 받칩니다.</p>
+<div class="chart"><h4>봇 9 : 비상금 1 — 연도별 수익률 (전체 자산)</h4>
+<svg viewBox="0 0 860 320" class="svg" role="img" aria-label="연도별 수익률">
+<line x1="56" y1="30.0" x2="844" y2="30.0" class="grid"/>
+<text x="48" y="34.0" class="ax" text-anchor="end">+800%</text>
+<line x1="56" y1="84.7" x2="844" y2="84.7" class="grid"/>
+<text x="48" y="88.7" class="ax" text-anchor="end">+600%</text>
+<line x1="56" y1="139.3" x2="844" y2="139.3" class="grid"/>
+<text x="48" y="143.3" class="ax" text-anchor="end">+400%</text>
+<line x1="56" y1="194.0" x2="844" y2="194.0" class="grid"/>
+<text x="48" y="198.0" class="ax" text-anchor="end">+200%</text>
+<line x1="56" y1="248.7" x2="844" y2="248.7" class="grid zero"/>
+<text x="48" y="252.7" class="ax" text-anchor="end">0%</text>
+<line x1="56" y1="276.0" x2="844" y2="276.0" class="grid"/>
+<text x="48" y="280.0" class="ax" text-anchor="end">-100%</text>
+<rect x="77.9" y="247.6" width="43.8" height="1.1" class="barA"/>
+<text x="99.8" y="240.6" class="barlab" text-anchor="middle">+4%</text>
+<text x="99.8" y="296" class="ax yr" text-anchor="middle">2018</text>
+<rect x="165.4" y="86.4" width="43.8" height="162.3" class="barA"/>
+<text x="187.3" y="79.4" class="barlab" text-anchor="middle">+594%</text>
+<text x="187.3" y="296" class="ax yr" text-anchor="middle">2019</text>
+<rect x="253.0" y="131.0" width="43.8" height="117.7" class="barA"/>
+<text x="274.9" y="124.0" class="barlab" text-anchor="middle">+431%</text>
+<text x="274.9" y="296" class="ax yr" text-anchor="middle">2020</text>
+<rect x="340.6" y="-13.1" width="43.8" height="261.7" class="barA"/>
+<text x="362.4" y="-20.1" class="barlab" text-anchor="middle">+958%</text>
+<text x="362.4" y="296" class="ax yr" text-anchor="middle">2021</text>
+<rect x="428.1" y="248.7" width="43.8" height="10.1" class="barA neg"/>
+<text x="450.0" y="273.8" class="barlab neg" text-anchor="middle">-37%</text>
+<text x="450.0" y="296" class="ax yr" text-anchor="middle">2022</text>
+<rect x="515.7" y="200.7" width="43.8" height="48.0" class="barA"/>
+<text x="537.6" y="193.7" class="barlab" text-anchor="middle">+176%</text>
+<text x="537.6" y="296" class="ax yr" text-anchor="middle">2023</text>
+<rect x="603.2" y="223.4" width="43.8" height="25.3" class="barA"/>
+<text x="625.1" y="216.4" class="barlab" text-anchor="middle">+92%</text>
+<text x="625.1" y="296" class="ax yr" text-anchor="middle">2024</text>
+<rect x="690.8" y="231.5" width="43.8" height="17.2" class="barA"/>
+<text x="712.7" y="224.5" class="barlab" text-anchor="middle">+63%</text>
+<text x="712.7" y="296" class="ax yr" text-anchor="middle">2025</text>
+<rect x="778.3" y="234.7" width="43.8" height="14.0" class="barA"/>
+<text x="800.2" y="227.7" class="barlab" text-anchor="middle">+51%</text>
+<text x="800.2" y="296" class="ax yr" text-anchor="middle">2026<tspan class="ax">(~10월)</tspan></text>
+</svg>
+</div>
+<table><thead><tr><th>연도</th><th>봇 9 : 비상금 1</th><th>연중 최대낙폭</th><th>둘을 1:1</th><th>BTC 단독</th><th>BNB 단독</th><th>거래</th></tr></thead><tbody>
+<tr><td>2018</td><td class="num pos"><b>+3.9%</b></td><td class="num neg">-71%</td><td class="num pos">+1%</td><td class="num neg">-5%</td><td class="num neg">-7%</td><td class="num muted">28</td></tr>
+<tr><td>2019</td><td class="num pos"><b>+593.8%</b></td><td class="num neg">-33%</td><td class="num pos">+732%</td><td class="num pos">+473%</td><td class="num pos">+745%</td><td class="num muted">16</td></tr>
+<tr><td>2020</td><td class="num pos"><b>+430.6%</b></td><td class="num neg">-36%</td><td class="num pos">+522%</td><td class="num pos">+724%</td><td class="num pos">+78%</td><td class="num muted">20</td></tr>
+<tr><td>2021</td><td class="num pos"><b>+957.5%</b></td><td class="num neg">-39%</td><td class="num pos">+1158%</td><td class="num pos">+206%</td><td class="num pos">+2628%</td><td class="num muted">12</td></tr>
+<tr><td>2022</td><td class="num neg"><b>-37.1%</b></td><td class="num neg">-61%</td><td class="num neg">-42%</td><td class="num neg">-64%</td><td class="num neg">-18%</td><td class="num muted">28</td></tr>
+<tr><td>2023</td><td class="num pos"><b>+175.5%</b></td><td class="num neg">-38%</td><td class="num pos">+202%</td><td class="num pos">+353%</td><td class="num pos">+64%</td><td class="num muted">16</td></tr>
+<tr><td>2024</td><td class="num pos"><b>+92.4%</b></td><td class="num neg">-45%</td><td class="num pos">+101%</td><td class="num pos">+90%</td><td class="num pos">+92%</td><td class="num muted">19</td></tr>
+<tr><td>2025</td><td class="num pos"><b>+62.8%</b></td><td class="num neg">-30%</td><td class="num pos">+70%</td><td class="num neg">-3%</td><td class="num pos">+115%</td><td class="num muted">27</td></tr>
+<tr><td>2026 (~10월)</td><td class="num pos"><b>+51.2%</b></td><td class="num neg">-27%</td><td class="num pos">+57%</td><td class="num pos">+23%</td><td class="num pos">+44%</td><td class="num muted">22</td></tr>
+</tbody></table>
+<p class="note">연속 운용 기준(앞 해의 결과가 다음 해 시드). 연중 최대낙폭 = 그 해 안에서 고점 대비 가장 많이 빠진 비율(전체 자산). 거래 = 두 봇 합(청산 연도 기준). 단독 열은 각 봇에 전부 넣었을 때.</p>
+</div></section>
+
+<!-- EXPECT -->
+<section class="alt"><div class="wrap">
+<div class="eyebrow">What to expect</div>
+<h2>기대치는 2017년 숫자가 아니라 2022년 이후 숫자로</h2>
+<p class="sub">×3,319은 2019년과 2021년이 만든 숫자입니다. 그 두 해가 다시 온다는 보장은 없습니다. 시작 시점을 바꿔 처음부터 다시 돌리면 이렇게 됩니다. (백테스트 기준, 끝은 모두 2026.10)</p>
+<table><thead><tr><th>시작 시점</th><th>봇 9 : 비상금 1</th><th>최대 낙폭</th><th>둘을 1:1</th><th>BTC 단독</th><th>BNB 단독</th></tr></thead><tbody>
+<tr><td>2019.01</td><td class="num"><b>×2,737.8</b> <span class="muted">연 +177%</span></td><td class="num neg">-63%</td><td class="num">×5,122.2 <span class="muted">+200%</span></td><td class="num">×444.3 <span class="muted">+119%</span></td><td class="num">×2,797.7 <span class="muted">+178%</span></td></tr>
+<tr><td>2020.01</td><td class="num"><b>×397.2</b> <span class="muted">연 +142%</span></td><td class="num neg">-63%</td><td class="num">×619.1 <span class="muted">+158%</span></td><td class="num">×80.0 <span class="muted">+91%</span></td><td class="num">×323.6 <span class="muted">+135%</span></td></tr>
+<tr><td>2021.01</td><td class="num"><b>×46.1</b> <span class="muted">연 +94%</span></td><td class="num neg">-63%</td><td class="num">×60.1 <span class="muted">+103%</span></td><td class="num">×7.5 <span class="muted">+42%</span></td><td class="num">×104.2 <span class="muted">+124%</span></td></tr>
+<tr style="background:var(--gold-soft)"><td>2022.01 <b>← 기대치</b></td><td class="num"><b>×6.0</b> <span class="muted">연 +46%</span></td><td class="num neg">-63%</td><td class="num">×6.5 <span class="muted">+48%</span></td><td class="num">×2.2 <span class="muted">+18%</span></td><td class="num">×6.0 <span class="muted">+46%</span></td></tr>
+<tr><td>2023.01</td><td class="num"><b>×9.1</b> <span class="muted">연 +79%</span></td><td class="num neg">-45%</td><td class="num">×10.9 <span class="muted">+88%</span></td><td class="num">×5.5 <span class="muted">+57%</span></td><td class="num">×9.1 <span class="muted">+80%</span></td></tr>
+<tr><td>2024.01</td><td class="num"><b>×5.2</b> <span class="muted">연 +81%</span></td><td class="num neg">-45%</td><td class="num">×5.9 <span class="muted">+89%</span></td><td class="num">×2.5 <span class="muted">+40%</span></td><td class="num">×6.4 <span class="muted">+95%</span></td></tr>
+</tbody></table>
+<div class="qa"><div class="q">그래서 기대치는</div><div class="a">2022년 1월에 시작했다면 <b>×6.0, 연 +46%, 그 사이 최대 낙폭 -63%</b> (봇 9 : 비상금 1). 이 숫자를 기대치로 잡으시길 권합니다. 1년 뒤에 본전 밑일 수도 있고(아래 표), 3년은 들고 갈 돈이어야 합니다.</div></div>
+<div class="chart" style="margin-top:22px"><h4>불운한 시작 — 2017.12–2026.10 안에서 매달 1일을 시작으로 잡았을 때 (봇 9 : 비상금 1, 근사)</h4>
+<table><thead><tr><th>기간</th><th>시작 달 수</th><th>최악 (시작 달)</th><th>중앙값</th><th>최고 (시작 달)</th><th>본전 밑 비율</th></tr></thead><tbody>
+<tr><td>1년 뒤</td><td class="num">95</td><td class="num neg">×0.55 (2022.07)</td><td class="num">×2.19</td><td class="num pos">×34.3 (2020.05)</td><td class="num"><b>16%</b> (15/95)</td></tr>
+<tr><td>2년 뒤</td><td class="num">83</td><td class="num neg">×0.81 (2021.05)</td><td class="num">×5.30</td><td class="num pos">×128.5 (2019.05)</td><td class="num"><b>4%</b> (3/83)</td></tr>
+<tr><td>3년 뒤</td><td class="num">71</td><td class="num neg">×2.11 (2022.07)</td><td class="num">×23.20</td><td class="num pos">×618.1 (2018.11)</td><td class="num"><b>0%</b> (0/71)</td></tr>
+</tbody></table>
+<p class="cap">같은 곡선 안에서 "그 달에 들어와 N년 뒤 나갔다면"을 센 근사치(새로 시작하면 첫 몇 주 거래가 조금 다릅니다). 1년 뒤 본전 밑일 확률 약 16%, 3년 뒤엔 어느 달에 시작했든 2배 이상이었습니다 — 과거 8.9년 안에서의 이야기이지 약속이 아닙니다.</p></div>
+</div></section>
+
+<!-- HOW -->
+<section id="how"><div class="wrap">
+<div class="eyebrow">What the bots do</div>
+<h2>사람이 못 하는 세 가지를, 8.9년 동안 한 번도 빠짐없이</h2>
+<p class="sub">매매 규칙의 세부 내용은 공개하지 않습니다. 공개하는 것은 결과와 그 대가입니다. 규칙은 추세추종 — 상승이면 롱, 하락이면 숏. 봇은 그 규칙을 한 치의 오차 없이 본인 OKX 계좌 안에서 24시간 실행합니다.</p>
+<div class="grid3" style="margin-top:22px">
+  <div class="card"><h3>사람이 못 하는 이유 ①</h3><p>2018년 자산이 71% 빠진 뒤에도 똑같은 크기로 다음 신호에 들어가는 것. 사람은 "이번엔 반만" 하거나 그만둡니다. 규칙대로 들어갔기에 2019년 +594%를 탔습니다.</p></div>
+  <div class="card"><h3>사람이 못 하는 이유 ②</h3><p>154일을 들고 가는 것. 2020.12에 잡은 BNB 롱을 2021.05까지 — +50%에서 익절하고 싶은 손을 봇은 갖고 있지 않습니다. 그 한 거래가 +1,972%였습니다.</p></div>
+  <div class="card"><h3>사람이 못 하는 이유 ③</h3><p>오를 때 빼고, 떨어졌을 때 넣는 것. 사람은 반대로 합니다. 금고는 매달 말 같은 계산을 해서 "어디서 어디로 얼마"만 보내고, 그 규칙이 최대 낙폭을 −75%에서 −71%로, 2022년을 -42%에서 -37%로 줄였고, 거래소 사고·청산이 나도 비상금은 남습니다.</p></div>
+</div>
+</div></section>
+
+<!-- LIVE -->
+<section class="alt"><div class="wrap">
+<div class="eyebrow">Live</div>
+<h2>운영자 실계좌 — 같은 것을 같은 규칙으로</h2>
+<p class="sub">운영자 본인 계좌에서 같은 봇·같은 금고가 돌아갑니다. 공개 범위는 수익률(%)이며, 매달 말 금고 장부를 기준으로 갱신합니다.</p>
+<div class="live">
+  <div class="card"><b>BTC 라온1</b><p>OKX 메인 계좌 · 2026.07~ 운영 중 · 현재 설정(변동성 비중)은 2026.10.06부터</p></div>
+  <div class="card"><b>BNB 라온1</b><p>OKX 서브계정 · 2026.10.14~ 운영 중 · 첫 거래부터 공개</p></div>
+</div>
+<table style="margin-top:14px"><thead><tr><th>월말</th><th>BTC 봇 (순투입 대비)</th><th>BNB 봇 (순투입 대비)</th><th>비고</th></tr></thead><tbody>
+<tr><td>2026.10.31</td><td class="num muted">첫 월말에 갱신</td><td class="num muted">첫 월말에 갱신</td><td class="muted">금고 가동 2026.10.16</td></tr>
+</tbody></table>
+<p class="note">순투입 대비 = 넣은 돈 대비 지금 잔고. 백테스트와 실계좌는 체결·수수료·펀딩·거래소 사정으로 다를 수 있습니다. 실계좌 기간이 짧은 동안의 숫자는 증거가 아니라 "규칙대로 돌아가고 있다"는 확인입니다.</p>
+</div></section>
+
+<!-- START -->
+<section id="start"><div class="wrap">
+<div class="eyebrow">Getting started</div>
+<h2>시작까지 1시간, 4단계 — 돈은 항상 본인 계좌에</h2>
+<div class="steps">
+  <div class="step"><div class="n">1</div><b>OKX 가입</b><span><a href="https://www.okx.com/join/36816702" target="_blank" rel="noopener">추천 링크</a>로 가입하면 수수료 할인 (코드 36816702). 기존 회원은 봇 전용 서브계정</span></div>
+  <div class="step"><div class="n">2</div><b>계좌 둘 + API 키</b><span>BTC용·BNB용 계좌(메인 + 서브계정)에 매매 권한만 있는 키. 출금·이체 권한 없음. 그림 가이드 그대로 20분</span></div>
+  <div class="step"><div class="n">3</div><b>텔레그램 연결</b><span>알림 봇에서 시작 버튼 한 번. 봇 둘의 매매 알림과 금고의 월말 지시가 여기로 옵니다</span></div>
+  <div class="step"><div class="n">4</div><b>입금 → 가동</b><span>본인 계좌에 USDT 입금(봇 9 : 비상금 1로 나눠서). 입금 확인 후 봇 둘과 금고가 켜지고, 다음 신호부터 진입</span></div>
+</div>
+<div class="seedbox" id="contact"><b>이용 조건과 비용은 상담 때 안내합니다.</b> 이 자료는 소개받은 분께만 드리는 비공개 자료입니다 — 소개해 주신 분 이름과 함께 카카오톡으로 연락 주세요. 권장 운용 자금은 1,000만원 이상(두 봇 + 비상금 합계)이고, <b>71%가 빠져도 생활에 지장 없는 돈</b>이어야 합니다. 운용 수수료나 수익 분배는 없습니다 — 벌어도 다 본인 것입니다. <b>직접 설정이 어려우신 분은 계정·키·텔레그램·입금까지 같이 해 드립니다</b>(원격 또는 대면). 그래도 돈은 본인 계좌에 있고, 그 뒤 하실 일은 한 달 2분입니다.
+<div style="margin-top:14px"><a class="cta" style="background:var(--gain);color:#fff" href="http://pf.kakao.com/_xfpSJX/chat" target="_blank" rel="noopener">카카오톡으로 상담 신청</a></div></div>
+</div></section>
+
+<!-- FAQ -->
+<section class="alt"><div class="wrap">
+<div class="eyebrow">FAQ</div>
+<h2>자주 묻는 질문</h2>
+<details><summary>내 돈은 어디에 있나요? 금고가 내 돈을 움직이나요?</summary><p>항상 본인 OKX 계좌에 있습니다. 봇은 API 키로 매매 명령만 보내고, 금고는 읽기 전용 키로 잔고를 읽기만 합니다. 어느 키에도 출금·이체 권한이 없어 운영자를 포함한 누구도 자금을 옮길 수 없습니다. 월말 이체는 금고가 "어디서 어디로 얼마"를 알려 주면 본인이 OKX 앱에서 직접 합니다. 언제든 OKX에서 키를 삭제하면 봇과 금고는 즉시 접근을 잃습니다.</p></details>
+<details><summary>승률이 37%라는데 괜찮은 건가요?</summary><p>"자주 이기는" 전략이 아니라 "크게 이기는" 전략입니다. 두 봇 188거래 중 119번은 평균 -9.9%씩 잃고, 69번은 평균 +91%씩 법니다. 다만 BTC 7연패, BNB 8연패도 실제로 있었습니다. 연패를 보고 중간에 끄면 가장 큰 거래를 놓칩니다.</p></details>
+<details><summary>BTC와 BNB가 같이 떨어지면요?</summary><p>같이 떨어집니다(2018·2022년). 그래서 둘을 섞어도 봇 쪽 최대 낙폭은 −75%로 BTC 단독과 비슷합니다. 섞어서 좋아지는 건 수익과 "최악의 해"(2022년 BTC 단독 -64% → 1:1 -42%)이고, 최대 낙폭을 −71%로 줄인 건 비상금입니다.</p></details>
+<details><summary>왜 ETH는 안 하나요? BNB는 업비트에 없는데요?</summary><p>같은 규칙으로 돌려 보니 ETH는 ×82에 낙폭 −90%로 BTC보다 못했고, XRP는 강제 청산됐습니다. 규칙이 모든 코인에서 통하는 게 아니라 긴 추세가 있는 코인에서 통합니다. 라온1은 현물이 아니라 OKX 무기한 선물에서 돌아가므로 업비트 상장 여부와 무관합니다.</p></details>
+<details><summary>얼마나 빠질 수 있나요?</summary><p>백테스트 최대 낙폭은 전체 자산 기준 −71.4%, 봇만 보면 BNB -83.7%·BTC -73.8%이고, 실제 미래는 더 나쁠 수 있습니다. 3배 레버리지라 가격이 포지션 반대로 약 33% 움직이면 강제 청산될 수 있습니다(8.9년 백테스트 0회 — 변동이 커지면 비중을 자동으로 줄이는 장치 덕). BNB는 거래소(바이낸스) 토큰이라 거래소 뉴스에 하루에 크게 움직일 수 있습니다.</p></details>
+<details><summary>매달 제가 할 일이 정확히 뭔가요?</summary><p>매달 마지막 날 아침 금고가 텔레그램으로 "할 일 없음" 또는 "어디서 어디로 $얼마"를 보냅니다. 있으면 OKX 앱에서 그 금액을 옮기고 "완료"라고 답하면 끝 — 2분. 분기 말에는 BTC:BNB 1:1 되맞춤과 "이번 분기 꺼내 써도 되는 돈"이 같이 옵니다. 그 외의 날은 아무것도 하지 않습니다. 봇 설정을 바꾸거나 수동으로 청산하지 않는 것이 규칙입니다.</p></details>
+<details><summary>실계좌 기록은요?</summary><p>운영자 계좌에서 BTC는 2026.07부터, BNB는 2026.10.14부터 돌아가고 있고, 월말마다 수익률(%)을 위 표에 갱신합니다. 그 전까지의 숫자는 전부 백테스트입니다.</p></details>
+<details><summary>돈을 맡기면 알아서 운용해 주실 수는 없나요?</summary><p>자금을 받아 대신 운용하고 수익을 나누는 방식은 하지 않습니다. 남의 돈을 받아 가상자산을 보관·운용하는 일에는 법적으로 별도 요건이 있어서입니다. 대신 계정 만들기부터 가동까지 설치를 끝까지 같이 해 드리고, 그 뒤 하실 일은 매달 말 이체 2분뿐입니다. 돈은 항상 본인 계좌에 있습니다.</p></details>
+<details><summary>그만두고 싶으면요?</summary><p>언제든 OKX에서 키를 삭제하거나 운영자에게 알려 주시면 봇이 멈춥니다. 보유 포지션은 본인이 OKX에서 정리하시면 됩니다(안내해 드립니다). 강제로 청산하지 않습니다.</p></details>
+</div></section>
+
+<!-- RISK -->
+<section><div class="wrap">
+<div class="risk"><h3>시작 전에 꼭 읽어 주세요</h3><ul>
+<li>8.9년 백테스트 최대 낙폭 −71.4%(전체 자산), 두 코인이 같이 떨어진 해(2022)에는 연간 마이너스가 났습니다. 실제 미래는 과거보다 나쁠 수 있습니다.</li>
+<li>3배 레버리지 선물 거래는 강제 청산을 포함한 원금 전액 손실 가능성이 있습니다.</li>
+<li>BNB 라온1은 백테스트에서 좋았던 코인을 고른 것이며 실계좌 기록은 2026.10.14부터입니다. 다른 코인(ETH·XRP)에서는 같은 규칙이 실패했습니다.</li>
+<li>승률 37% — 손실 거래가 연속으로 나오는 기간이 반드시 옵니다. 그때 끄면 전략이 성립하지 않습니다.</li>
+<li>2년 안에 써야 하는 돈, 빌린 돈으로 시작하지 마세요. 잃어도 생활에 지장 없는 금액으로만.</li>
+</ul></div>
+<p class="legal">본 서비스는 자동매매 프로그램 이용권으로, 투자 자문·일임·자금 수탁을 하지 않습니다. 매매와 손익은 이용자 본인의 거래소 계좌에서 발생하며, 운영자는 이용자의 자금을 보관하거나 출금·이체할 수 없습니다. 안내된 성과는 2017.12–2026.10 BTC/USDT·BNB/USDT 5분봉 가격 데이터(바이낸스) 기반 백테스트(선물 거래 비용인 수수료·슬리피지·펀딩 반영, 미래참조 배제, 봉별 순차 재현, 두 봇 1:1 분기 되맞춤과 봇 9 : 비상금 1 월 1회 되맞춤의 이체 비용 0.1% 반영) 결과이며, 실제 계좌에서 실현된 수익이 아닙니다. 과거 성과는 미래 수익을 보장하지 않습니다. 가상자산 레버리지 거래는 원금 손실이 발생할 수 있습니다. 원화 환산액은 1 USD = 1,500원 기준 근사치입니다. 운영자는 거래소 추천 프로그램에 따른 수수료를 받을 수 있습니다. 이 자료는 소개받은 분께 개별적으로 드리는 설명 자료이며 불특정 다수를 위한 광고가 아닙니다.</p>
+</div></section>
+
+<footer>© 파랑라온 · 라온1 듀얼 · 2026.10 · 소개받은 분을 위한 비공개 설명 자료</footer>
+</body></html>
